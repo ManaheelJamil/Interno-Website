@@ -1,28 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './Navbar';
-import Hero from './Hero';
-import Section1 from './Section1';
-import Section2 from './Section2';
-import Section3 from './section3';
-import Section4 from './section4';
-import Section5 from './Section5';
-import Section6 from './Section6';
-import Section7 from './Section7';
-import Footer from './Footer';
+import {
+  BrowserRouter as Router,
+  Link,
+  Route,
+  Routes,
+} from "react-router-dom";
+import Home from './Home'
+import AboutUs from "./components/about";
+import Services from './components/services'
 function App() {
   return (
     <>
-      <Navbar />
-      <Hero />
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5/>
-      <Section6/>
-      <Section7/>
-      <Footer/>
+
+      <Router>
+        {/* <ul>
+          <li>
+            <Link to='/'>Home</Link>
+          </li>
+          <li>
+            <Link to='/about'>AboutUs</Link>
+          </li>
+        </ul> */}
+        <Routes>
+          <Route path="/" element={<Home />}/>
+        
+      
+          <Route path="/about" element={<AboutUs />}/>
+          <Route path="/services" element={<Services/>}/>
+        </Routes>
+      </Router>
+
+
     </>
 
   );
