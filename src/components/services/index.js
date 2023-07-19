@@ -7,7 +7,7 @@ import { FaFacebookF } from "react-icons/fa"
 import { BsTwitter } from "react-icons/bs"
 import { BiLogoLinkedin } from "react-icons/bi"
 import { FaInstagram } from "react-icons/fa"
-import {AiOutlineCopyrightCircle} from"react-icons/ai"
+import { AiOutlineCopyrightCircle } from "react-icons/ai"
 import { Link } from 'react-router-dom';
 const Services = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -71,7 +71,7 @@ const Services = () => {
 
             <img src='banner2.png' />
 
-            <div className='tablet:w-96 mobile:w-60 p-10  bg-white tablet:top-52 mobile:top-24 left-0 right-0 absolute mx-auto desktop:h-80 laptop:h-60 rounded-[30px] text-center   text-[#292F36]'>
+            <div className='tablet:w-96 mobile:w-60 p-10   tablet:top-52 mobile:top-24 left-0 right-0 absolute mx-auto desktop:h-52 laptop:h-20 bg-white rounded-[30px] text-center   text-[#292F36]'>
                 <h1 className='tablet:text-4xl mobile:text-2xl font-semibold'>Services</h1>
                 <p>Home / Services</p>
             </div>
@@ -79,45 +79,50 @@ const Services = () => {
             {/* ************** section 1 ******************* */}
 
             <div className='laptop:w-[900px] tablet:w-[600px] tablet:gap-20 mobile:gap-5 mx-auto grid laptop:grid-cols-3 tablet:grid-cols-2  justify-center mt-32'>
-                <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
-                    <h1 className='text-xl font-bold text-[#292F36]'>Project Plan</h1>
-                    <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
-                        available, majority.</p>
-                    <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
 
-                </div>
                 <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
-                    <h1 className='text-xl font-bold text-[#292F36]'>Interior Work</h1>
-                    <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
-                        available, majority.</p>
-                    <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    <Link to='/ServiceSample'> <h1 className='text-xl font-bold text-[#292F36]'>Project Plan</h1>
+                        <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    </Link>
+                </div>
 
+                <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
+                    <Link to='/ServiceSample'>   <h1 className='text-xl font-bold text-[#292F36]'>Interior Work</h1>
+                        <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    </Link>
                 </div>
                 <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
-                    <h1 className='text-xl font-bold text-[#292F36]'>Realization</h1>
-                    <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
-                        available, majority.</p>
-                    <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    <Link to='/ServiceSample'>
+                        <h1 className='text-xl font-bold text-[#292F36]'>Realization</h1>
+                        <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    </Link>
                 </div>
                 <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
-                    <h1 className='text-xl font-bold text-[#292F36]'>2D/ 3D Art Work</h1>
-                    <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
-                        available, majority.</p>
-                    <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
-
+                    <Link to='/ServiceSample'> <h1 className='text-xl font-bold text-[#292F36]'>2D/ 3D Art Work</h1>
+                        <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    </Link>
                 </div>
                 <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
-                    <h1 className='text-xl font-bold text-[#292F36]'>Interior Work</h1>
-                    <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
-                        available, majority.</p>
-                    <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
-
+                    <Link to='/ServiceSample'>   <h1 className='text-xl font-bold text-[#292F36]'>Interior Work</h1>
+                        <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    </Link>
                 </div>
                 <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
-                    <h1 className='text-xl font-bold text-[#292F36]'>Decoration Work</h1>
-                    <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
-                        available, majority.</p>
-                    <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    <Link to='/ServiceSample'>   <h1 className='text-xl font-bold text-[#292F36]'>Decoration Work</h1>
+                        <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    </Link>
                 </div>
             </div>
 
@@ -127,7 +132,7 @@ const Services = () => {
 
                 <h1 className='text-4xl font-bold text-center text-[#292F36] pt-32'>How We Work</h1>
                 <p className='text-[#292F36] tablet:mx-44 mobile:mx-5 mobile:text-center mt-5'>It is a long established fact  will be distracted.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                <div className='tablet:flex tablet:w-[800px] tablet:mt-40 mobile:mt-40 mobile:mx-5 justify-between tablet:mx-auto'>
+                <div className='flex tablet:w-[800px] tablet:mt-40 mobile:flex-col-reverse tablet:flex-row mobile:mt-40 mobile:mx-5 justify-between tablet:mx-auto'>
                     <div>
                         <img src="Image.png" className='w-[350px] rounded-[30px] tablet:mt-0 mobile:mt-20' />
                     </div>
@@ -141,7 +146,6 @@ const Services = () => {
                             and typesetting indufstry. </p>
                     </div>
                 </div>
-
 
 
                 <div className='tablet:flex tablet:w-[800px] tablet:mt-40 mobile:mt-40 mobile:mx-5 justify-between tablet:mx-auto'>
@@ -162,7 +166,7 @@ const Services = () => {
 
 
 
-                <div className='tablet:flex tablet:w-[800px] tablet:mt-40 mobile:mt-40 mobile:mx-5 justify-between tablet:mx-auto'>
+                <div className='flex tablet:w-[800px] tablet:mt-40 mobile:mt-40  mobile:flex-col-reverse tablet:flex-row  mobile:mx-5 justify-between tablet:mx-auto'>
                     <div>
                         <img src="Image (2).png" className='w-[350px] rounded-[30px] tablet:mt-0 mobile:mt-20' />
                     </div>
@@ -178,7 +182,7 @@ const Services = () => {
                 </div>
 
 
-                <div className='tablet:flex  tablet:w-[800px] tablet:mt-40 mobile:mt-40 mobile:mx-5 justify-between tablet:mx-auto'>
+                <div className='tablet:flex  tablet:w-[800px] tablet:mt-40 mobile:mt-40  mobile:mx-5 justify-between tablet:mx-auto'>
                     <div className='tablet:w-96 mt-10'>
                         <div className='flex justify-between'>
                             <img src='Icon (2).png' className='w-24' />
@@ -195,16 +199,16 @@ const Services = () => {
             </div>
 
 
- {/* ********************** section 3 *********************** */}
+            {/* ********************** section 3 *********************** */}
 
- <div className='laptop:w-[1000px] mx-auto py-10 mobile:mt-20  rounded-[50px] bg-[#292F36] text-white tablet:mt-44 text-center'>
-    <h1 className='tablet:text-4xl mobile:text-2xl font-bold py-5'>Wanna join the interno?</h1>
-    <p>It is a long established fact  will be distracted.</p>
-    <button className=' bg-[#CDA274] rounded-xl text-xs flex mx-auto justify-center w-36 py-4 mt-5 text-white '>Contact With Us&nbsp;<HiOutlineArrowNarrowRight className='text-xl text-[#292F36]' /></button>
-  </div>
+            <div className='laptop:w-[1000px] mx-auto py-10 mobile:mt-20  rounded-[50px] bg-[#292F36] text-white tablet:mt-44 text-center'>
+                <h1 className='tablet:text-4xl mobile:text-2xl font-bold py-5'>Wanna join the interno?</h1>
+                <p>It is a long established fact  will be distracted.</p>
+                <button className=' bg-[#CDA274] rounded-xl text-xs flex mx-auto justify-center w-36 py-4 mt-5 text-white '>Contact With Us&nbsp;<HiOutlineArrowNarrowRight className='text-xl text-[#292F36]' /></button>
+            </div>
 
-  {/* ****************** footer ************************* */}
-  <div id="contact" className='tablet:w-[1000px] mt-40 text-[#292F36] mobile:mx-10 tablet:mx-auto mobile:space-y-10 tablet:space-y-0 grid laptop:grid-cols-5  tablet:grid-cols-3 '>
+            {/* ****************** footer ************************* */}
+            <div id="contact" className='tablet:w-[1000px] mt-40 text-[#292F36] mobile:mx-10 tablet:mx-auto mobile:space-y-10 tablet:space-y-0 grid laptop:grid-cols-5  tablet:grid-cols-3 '>
                 <div className='laptop:col-span-2 tablet:w-80 '>
                     <div className='flex  '>
                         <img src='./logo.png' className='w-8 h-7 mt-2 mx-1' />
@@ -243,8 +247,8 @@ const Services = () => {
                 </div>
             </div>
 
-            <p class=" mt-32 flex justify-center text-[#292F36]  mx-auto">2023<AiOutlineCopyrightCircle className='text-[#292F36]  px-1 text-2xl'/>
-        All rights reserved by<a href="https://mayonity.com/" className='text-[#292F36]  font-bold ml-3' target='_blank'>Mayonity</a></p>
+            <p class=" mt-32 flex justify-center text-[#292F36]  mx-auto">2023<AiOutlineCopyrightCircle className='text-[#292F36]  px-1 text-2xl' />
+                All rights reserved by<a href="https://mayonity.com/" className='text-[#292F36]  font-bold ml-3' target='_blank'>Mayonity</a></p>
         </>
     )
 }
