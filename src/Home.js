@@ -47,12 +47,12 @@ const Navbar = () => {
                 </div>
                 <div>
                     <ul class=' tablet:flex  mobile:hidden tablet:block tablet:space-x-5 laptop:space-x-10 text-[#292F36] font-semibold'>
-                        <li className='hover:text-yellow-800'><a href="#">Home</a></li>
-                        <li className='hover:text-yellow-800'><a href="#pages">Pages</a></li>
+                        <li className='hover:text-yellow-800'><a href="/">Home</a></li>
+                        <li className='hover:text-yellow-800'><a href="/">Pages</a></li>
                         <li className='hover:text-yellow-800'><Link to='/services'>Services</Link></li>
-                        <li className='hover:text-yellow-800'><a href="#project">Project</a></li>
-                        <li className='hover:text-yellow-800'><a href="#blog">Blog </a></li>
-                        <li className='hover:text-yellow-800'><a href="#contact">Contact</a></li>
+                        <li className='hover:text-yellow-800'><Link to='/project'>Project</Link></li>
+                        <li className='hover:text-yellow-800'><a href="/">Blog </a></li>
+                        <li className='hover:text-yellow-800'><a href="/">Contact</a></li>
                         <li className='text-2xl'><FiSearch /></li>
                     </ul>
                 </div>

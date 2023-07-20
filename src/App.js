@@ -8,6 +8,8 @@ import Home from './Home'
 import AboutUs from "./components/about";
 import Services from './components/services'
 import ServiceSample from "./components/serviceSample";
+import Project from "./components/Projects";
+import Projectdetail from "./components/Projectdetail"
 function App() {
   return (
     <>
@@ -22,12 +24,12 @@ function App() {
           </li>
         </ul> */}
         <Routes>
-          <Route path="/" element={<Home />}/>
-        
-      
+          <Route path="/" element={<Home />}/>   
           <Route path="/about" element={<AboutUs />}/>
           <Route path="/services" element={<Services/>}/>
           <Route path="/serviceSample" element={<ServiceSample/>}/>
+          <Route path="/Project" element={<Project />}/>
+          <Route path="/Projectdetail" element={<Projectdetail />}/>
         </Routes>
       </Router>
 

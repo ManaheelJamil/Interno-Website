@@ -50,7 +50,7 @@ const ServiceSample = () => {
                         <li className='hover:text-yellow-800'><a href="#">Home</a></li>
                         <li className='hover:text-yellow-800'><a href="#pages">Pages</a></li>
                         <li className='hover:text-yellow-800'><Link to='/services'>Services</Link></li>
-                        <li className='hover:text-yellow-800'><a href="#project">Project</a></li>
+                        <li className='hover:text-yellow-800'><Link to='/project'>Project</Link></li>
                         <li className='hover:text-yellow-800'><a href="#blog">Blog </a></li>
                         <li className='hover:text-yellow-800'><a href="#contact">Contact</a></li>
                         <li className='text-2xl'><FiSearch /></li>
@@ -111,7 +111,7 @@ const ServiceSample = () => {
             {/* ************************** section 3 *********************** */}
 
 
-            <img src='Video.png' className='mx-auto my-44 tablet:w-[900px]'/>
+            <img src='Video.png' className='mx-auto my-44 tablet:w-[900px] hover:scale-105 duration-700'/>
       
       {/* **************** section 4 ****************** */}
 
