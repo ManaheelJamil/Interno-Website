@@ -76,7 +76,7 @@ const Navbar = () => {
 
             <div className='bg '>
                 <div className='laptop:w-[900px] laptop:p-56 tablet:p-44 mobile:pt-32 mobile:pl-10'>
-                    <h1 className='text-6xl font-bold text-[#292F36]'>Let Your Home Be Unique</h1>
+                    <h1 className='text-6xl  text-[#292F36]'>Let Your Home Be Unique</h1>
                     <p className='text-gray-600 mt-4'>There are many variations of the passages of lorem Ipsum fromavailable,variations of the passages.</p>
                     <button className='bg-[#292F36] rounded-xl text-sm flex justify-center w-36 py-4 mt-5 text-white '>Get Started &nbsp;<HiOutlineArrowNarrowRight className='text-xl' /></button>
 
@@ -113,7 +113,7 @@ const Navbar = () => {
 
             <div className='tablet:flex laptop:w-[1100px] tablet:w-[900px] mobile:w-80 mobile:p-5 mobile:mt-10 tablet:mt-40 mx-auto justify-around'>
                 <div className='tablet:w-80 mobile:w-60 mt-10'>
-                    <h1 className='tablet:text-4xl mobile:text-3xl text-[#292F36] font-bold'>We Create The Art
+                    <h1 className='tablet:text-4xl mobile:text-3xl text-[#292F36]'>We Create The Art
                         Of Stylish Living
                         Stylishly</h1>
                     <p className='text-gray-600 mt-5'>It is a long established fact that a reader will be distracted by the of readable content of a page
@@ -139,8 +139,8 @@ const Navbar = () => {
 
             {/* *************section3**************** */}
 
-            <div id="services" className='laptop:w-[950px] tablet:w-[850px] mx-auto laptop:h-[500px] pb-10  rounded-[50px] mt-32 bg-[#CDA274]'>
-                <h1 className='text-[#292F36] font-bold text-4xl  tablet:w-[500px] pt-20  mx-auto text-center'>What the People Thinks
+            <div id="services" className='laptop:w-[950px] tablet:w-[850px] mx-auto laptop:h-[500px] pb-10  rounded-[50px] mt-32 bg-[#F4F0EC]'>
+                <h1 className='text-[#292F36]  text-4xl  tablet:w-[400px] pt-20  mx-auto text-center'>What the People Thinks
                     About Us</h1>
                 <div className='grid laptop:grid-cols-3 tablet:grid-cols-2 p-5 mobile:gap-5 tablet:gap-10  laptop:w-[900px] tablet:w-[800px] mx-auto mt-10'>
                     <div className='bg-white rounded-3xl laptop:w-72  duration-700 hover:scale-105 cursor-pointer h-60 text-[#292F36]'>
@@ -184,7 +184,7 @@ const Navbar = () => {
 
             {/* *************section4**************** */}
 
-            <div id="pages" className='flex flex-wrap justify-around mt-40 gap-10 m-10 align-middle items-center mx-auto'>
+            <div id="pages" className='flex flex-wrap tablet:w-[900px] justify-around mt-40 gap-10 m-10 align-middle items-center mx-auto'>
                 <img src='01.png' className='h-10' />
                 <img src='02.png' className='h-20' />
                 <img src='03 (1).png' className='h-10' />
@@ -196,7 +196,7 @@ const Navbar = () => {
             {/* *************section5**************** */}
 
             <div id="project">
-                <h1 className='tablet:text-5xl mobile:text-4xl font-bold text-center mt-32 text-[#292F36]'>Follow Our Projects</h1>
+                <h1 className='tablet:text-5xl mobile:text-4xl  text-center mt-32 text-[#292F36]'>Follow Our Projects</h1>
                 <p className='tablet:w-[550px] text-center text-[#292F36] mx-auto mt-5'>It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
 
                 <div className='tablet:w-[900px] mx-auto  place-items-center mt-20 gap-10 grid  laptop:grid-cols-2'>
@@ -249,22 +249,22 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <div className='bg-[#c2ad96]'>
+                <div className='bg-[#F4F0EC]'>
                     <div className=' tablet:w-[900px] mx-auto mt-32 flex justify-around gap-10 flex-wrap py-20'>
                         <div className='tablet:w-44'>
-                            <h1 className='text-8xl text-yellow-800 font-bold'>12</h1>
+                            <h1 className='text-8xl text-[#CDA274] '>12</h1>
                             <p>Year Of Experience</p>
                         </div>
                         <div className=' tablet:w-44'>
-                            <h1 className='text-8xl text-yellow-800 font-bold'>85</h1>
+                            <h1 className='text-8xl text-[#CDA274] '>85</h1>
                             <p>Year Of Experience</p>
                         </div>
                         <div className='tablet:w-44'>
-                            <h1 className='text-8xl text-yellow-800 font-bold'>15</h1>
+                            <h1 className='text-8xl text-[#CDA274] '>15</h1>
                             <p>Year Of Experience</p>
                         </div>
                         <div className=' tablet:w-44'>
-                            <h1 className='text-8xl text-yellow-800 font-bold'>75</h1>
+                            <h1 className='text-8xl text-[#CDA274] '>75</h1>
                             <p>Year Of Experience</p>
                         </div>
                     </div>
@@ -275,12 +275,12 @@ const Navbar = () => {
             {/* ******************section6**************** */}
 
             <div id="blog">
-                <h1 className='tablet:text-5xl mobile:text-4xl font-bold text-center mt-32 text-[#292F36]'>Articles & News</h1>
+                <h1 className='tablet:text-5xl mobile:text-4xl  text-center mt-32 text-[#292F36]'>Articles & News</h1>
                 <p className='tablet:w-[550px] text-center text-[#292F36] mx-auto mt-5'>It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using..</p>
                 <div className='laptop:w-[1000px] mx-auto grid laptop:grid-cols-3 gap-5 tablet:grid-cols-2 justify-around mt-10'>
                     <div className='w-72 p-5 border rounded-[40px] '>
                         <img src="kitchen.png" className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
-                        <h1 className='text-xl text-[#292F36] mt-2 font-bold'>Let’s Get Solution For Building Construction Work</h1>
+                        <h1 className='text-xl text-[#292F36] mt-2  font-semibold'>Let’s Get Solution For Building Construction Work</h1>
                         <div className='flex  px-2 justify-between tablet:w-64 mt-3'>
                             <div>
                                 <p className='text-[#292F36] mt-2'>26 December,2022 </p>
@@ -292,7 +292,7 @@ const Navbar = () => {
                     </div>
                     <div className='w-72 p-5 border rounded-[40px] '>
                         <img src="left kitchen.png" className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
-                        <h1 className='text-xl text-[#292F36] mt-2 font-bold'>Low Cost Latest Invented Interior Designing
+                        <h1 className='text-xl text-[#292F36] mt-2 font-semibold'>Low Cost Latest Invented Interior Designing
                             Ideas.</h1>
                         <div className='flex  px-2 justify-between tablet:w-64 mt-10'>
                             <div>
@@ -305,7 +305,7 @@ const Navbar = () => {
                     </div>
                     <div className='w-72 p-5 border rounded-[40px] '>
                         <img src="frontKitchen.png" className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
-                        <h1 className='text-xl text-[#292F36] mt-2 font-bold'>Best For Any Office & Business Interior
+                        <h1 className='text-xl text-[#292F36] mt-2 font-semibold'>Best For Any Office & Business Interior
                             Solution</h1>
                         <div className='flex  px-2 justify-between tablet:w-64 mt-10'>
                             <div>
@@ -321,9 +321,9 @@ const Navbar = () => {
 
 {/* **************Section7***************** */}
 <div className='laptop:w-[1000px] mx-auto py-10 mobile:mt-20  rounded-[50px] bg-[#292F36] text-white tablet:mt-44 text-center'>
-    <h1 className='tablet:text-4xl mobile:text-2xl font-bold py-5'>Wanna join the interno?</h1>
+    <h1 className='tablet:text-4xl mobile:text-2xl  py-5'>Wanna join the interno?</h1>
     <p>It is a long established fact  will be distracted.</p>
-    <button className=' bg-[#CDA274] rounded-xl text-xs flex mx-auto justify-center w-36 py-4 mt-5 text-white '>Contact With Us&nbsp;<HiOutlineArrowNarrowRight className='text-xl text-[#292F36]' /></button>
+    <button className=' bg-[#CDA274] rounded-xl text-xs flex mx-auto justify-center w-36 py-4 mt-6 text-white '>Contact With Us&nbsp;<HiOutlineArrowNarrowRight className='ml-2 text-xl text-[#292F36]' /></button>
   </div>
 
   {/* *************** footer **************** */}

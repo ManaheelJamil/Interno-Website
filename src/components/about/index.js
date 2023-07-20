@@ -77,7 +77,7 @@ const AboutUs = () => {
         <p>Home / About Us</p>
       </div>
       <div className='pt-20 rounded-[40px] tablet:mx-auto mobile:mx-2 text-center tablet:w-[600px] text-[#292F36] h-80 mt-40 border-[13px] border-[#F4F0EC]'>
-        <h1 className='tablet:text-2xl mobile:text-lg mx-5 font-bold absolute italic tablet:mx-10 tablet:w-[500px]'>I like an interior that defies labeling. I don't really want someone to walk into a room and know that I did it<br /> <p className='text-xl mt-4 font-light'>-BUNNY WILLIAMS</p></h1>
+        <h1 className='tablet:text-2xl mobile:text-lg mx-5  absolute italic tablet:mx-10 tablet:w-[500px]'>I like an interior that defies labeling. I don't really want someone to walk into a room and know that I did it<br /> <p className='text-xl mt-4 font-light'>-BUNNY WILLIAMS</p></h1>
       </div>
 
 
@@ -93,14 +93,14 @@ const AboutUs = () => {
           <button className='bg-[#292F36] rounded-xl text-sm flex justify-center w-36 py-4 mt-5 text-white '>Over Concept &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-[#CDA274]' /></button>
         </div>
         <div>
-          <img src="image.png" className='w-[450px] tablet:mt-0 mobile:mt-20' />
+          <img src="Image (6).png" className='w-[450px] tablet:mt-0 mobile:mt-20' />
         </div>
       </div>
       {/* ************** section 2 ****************** */}
 
       <div className='tablet:flex tablet:w-[900px] tablet:mt-40 mobile:mt-40 mobile:mx-5 justify-between tablet:mx-auto'>
         <div>
-          <img src="photo.jpg" className='w-[450px] rounded-[30px] tablet:mt-0 mobile:mt-20' />
+          <img src="Photo (2).jpg" className='w-[450px] rounded-[30px] tablet:mt-0 mobile:mt-20' />
         </div>
         <div className='tablet:w-96'>
 
@@ -117,7 +117,7 @@ const AboutUs = () => {
         <h1 className='text-3xl mx-auto  mt-32 tablet:w-96 font-bold text-[#292F36]'>What the People Thinks
           About Us</h1>
         <div className='tablet:w-[850px] mx-auto mt-10  flex flex-wrap gap-5 justify-around'>
-          <img src="image 1.png" className='w-48 h-72' />
+          <img src="Image (7).png" className='w-48 h-72' />
           <img src="image 2.png" className='w-48 h-72' />
           <div className='bg-white tablet:w-52 mobile:w-48 rounded-[20px] pt-16'>
             <h1 className='text-xl  font-semibold'>Nattasha Julie</h1>
