@@ -42,7 +42,7 @@ const Project = () => {
             <div className={`flex  justify-around tablet:w-full   py-5 top-0 left-0 right-0  fixed   mx-auto   ${scrolled ? 'bg-white' : 'bg-white'}`} class=' flex justify-around tablet:w-full relative  py-5'>
                 <div className='flex '>
                     <img src='./logo.png' className='w-5 h-5 mt-2 mx-1' />
-                    <h1 className='font-bold text-2xl text-[#292F36] font-sans'>Interno</h1>
+                    <h1 className='font text-2xl text-[#292F36]'>Interno</h1>
                 </div>
                 <div>
                     <ul class=' tablet:flex  mobile:hidden tablet:block tablet:space-x-5 laptop:space-x-10 text-[#292F36] font-semibold'>
@@ -76,7 +76,7 @@ const Project = () => {
             <img src='Image (4).png' className='w-full ' />
 
             <div className='tablet:w-96 mobile:w-60 p-10   tablet:top-52 mobile:top-24 left-0 right-0 absolute mx-auto desktop:h-52 laptop:h-40 bg-white rounded-[30px] text-center   text-[#292F36]'>
-                <h1 className='tablet:text-4xl mobile:text-2xl font-semibold'>Our Project</h1>
+                <h1 className='tablet:text-4xl mobile:text-2xl font'>Our Project</h1>
                 <p>Home / Project</p>
             </div>
 
@@ -94,7 +94,7 @@ const Project = () => {
                  <Link to="/Projectdetail"> <img src="one.png" className='w-[100%]' />
                     <div className='flex justify-between tablet:w-96 mt-3'>
                         <div>
-                            <h1 className='text-[#292F36] text-xl font-bold'>Minimal Bedroom</h1>
+                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
                             <p className='text-[#292F36]'>Decor / Artchitecture</p>
                         </div>
                         <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
@@ -108,7 +108,7 @@ const Project = () => {
                 <Link to="/Projectdetail">        <img src="two.png" className='w-[100%]' />
                     <div className='flex justify-between tablet:w-96 mt-3'>
                         <div>
-                            <h1 className='text-[#292F36] text-xl font-bold'>Minimal Bedroom</h1>
+                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
                             <p className='text-[#292F36]'>Decor / Artchitecture</p>
                         </div>
                         <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
@@ -122,7 +122,7 @@ const Project = () => {
                 <Link to="/Projectdetail">   <img src="three.png" className='w-[100%]' />
                     <div className='flex justify-between tablet:w-96 mt-3'>
                         <div>
-                            <h1 className='text-[#292F36] text-xl font-bold'>Minimal Bedroom</h1>
+                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
                             <p className='text-[#292F36]'>Decor / Artchitecture</p>
                         </div>
                         <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
@@ -136,7 +136,7 @@ const Project = () => {
                 <Link to="/Projectdetail">      <img src="four.png" className='w-[100%]' />
                     <div className='flex justify-between tablet:w-96 mt-3'>
                         <div>
-                            <h1 className='text-[#292F36] text-xl font-bold'>Minimal Bedroom</h1>
+                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
                             <p className='text-[#292F36]'>Decor / Artchitecture</p>
                         </div>
                         <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
@@ -150,7 +150,7 @@ const Project = () => {
                 <Link to="/Projectdetail">          <img src="five.png" className='w-[100%]' />
                     <div className='flex justify-between tablet:w-96 mt-3'>
                         <div>
-                            <h1 className='text-[#292F36] text-xl font-bold'>Minimal Bedroom</h1>
+                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
                             <p className='text-[#292F36]'>Decor / Artchitecture</p>
                         </div>
                         <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
@@ -164,7 +164,7 @@ const Project = () => {
                 <Link to="/Projectdetail">         <img src="six.png" className='w-[100%]' />
                     <div className='flex justify-between tablet:w-96 mt-3'>
                         <div>
-                            <h1 className='text-[#292F36] text-xl font-bold'>Minimal Bedroom</h1>
+                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
                             <p className='text-[#292F36]'>Decor / Artchitecture</p>
                         </div>
                         <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
@@ -178,7 +178,7 @@ const Project = () => {
                 <Link to="/Projectdetail">     <img src="seven.png" className='w-[100%]' />
                     <div className='flex justify-between tablet:w-96 mt-3'>
                         <div>
-                            <h1 className='text-[#292F36] text-xl font-bold'>Minimal Bedroom</h1>
+                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
                             <p className='text-[#292F36]'>Decor / Artchitecture</p>
                         </div>
                         <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
@@ -192,7 +192,7 @@ const Project = () => {
                 <Link to="/Projectdetail">    <img src="eight.png" className='w-[100%]' />
                     <div className='flex justify-between tablet:w-96 mt-3'>
                         <div>
-                            <h1 className='text-[#292F36] text-xl font-bold'>Minimal Bedroom</h1>
+                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
                             <p className='text-[#292F36]'>Decor / Artchitecture</p>
                         </div>
                         <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
@@ -210,7 +210,7 @@ const Project = () => {
                 <div className='laptop:col-span-2 tablet:w-80 '>
                     <div className='flex  '>
                         <img src='./logo.png' className='w-8 h-7 mt-2 mx-1' />
-                        <h1 className='font-bold text-4xl text-[#292F36] font-sans'>Interno</h1>
+                        <h1 className=' text-4xl text-[#292F36] font'>Interno</h1>
                     </div>
                     <p className='py-4'>It is a long established fact that a reader will be distracted lookings.</p>
                     <div className='flex justify-between w-44'>
@@ -222,7 +222,7 @@ const Project = () => {
                 </div>
 
                 <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-                    <li className='hover:text-yellow-900 cursor-pointer'><h1 className='font-bold text-2xl'>Pages</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer font'><h1 className='font-bold text-2xl'>Pages</h1></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>  <Link to='/about'>AboutUs</Link></p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Projects</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Teams</p></li>
@@ -230,7 +230,7 @@ const Project = () => {
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p> <Link to='/services'>Services</Link></p></li>
                 </div>
                 <div className='list-none space-y-7 '>
-                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><h1 className='font-bold text-2xl'>Services</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font'><h1 className='font-bold text-2xl'>Services</h1></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Kitchen</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Living Area</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Bathroom</p></li>
@@ -238,7 +238,7 @@ const Project = () => {
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Bedroom</p></li>
                 </div>
                 <div className='list-none space-y-7 '>
-                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><h1 className='font-bold text-2xl'>Contact</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font' ><h1 className='font-bold text-2xl'>Contact</h1></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><p> 55 East Birchwood Ave. Brooklyn, New York 11201</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><p> contact@interno.com</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><p>(123) 456 - 7890</p></li>

@@ -43,7 +43,7 @@ const Projectdetail = () => {
             <div className={`flex  justify-around tablet:w-full   py-5 top-0 left-0 right-0  fixed   mx-auto   ${scrolled ? 'bg-white' : 'bg-white'}`} class=' flex justify-around tablet:w-full relative  py-5'>
                 <div className='flex '>
                     <img src='./logo.png' className='w-5 h-5 mt-2 mx-1' />
-                    <h1 className='font-bold text-2xl text-[#292F36] font-sans'>Interno</h1>
+                    <h1 className='font text-2xl text-[#292F36] '>Interno</h1>
                 </div>
                 <div>
                     <ul class=' tablet:flex  mobile:hidden tablet:block tablet:space-x-5 laptop:space-x-10 text-[#292F36] font-semibold'>
@@ -79,14 +79,14 @@ const Projectdetail = () => {
             {/* **************** section 1 *************** */}
             <div className='tablet:w-[1000px] tablet:mx-auto mobile:mx-5 mt-32 tablet:flex justify-between'>
                 <div className='tablet:w-[45%] text-[#292F36] bg-[#F4F0EC] tablet:p-16 mobile:p-5 rounded-[40px] tablet:h-80 flex justify-around'>
-                    <div className='font-bold tablet:text-xl mobile:text-md space-y-2 '>
+                    <div className='font-bold tablet:text-xl font mobile:text-md space-y-2 '>
                         <h1>Client</h1>
                         <h1>Category</h1>
                         <h1>Tags</h1>
                         <h1>Date</h1>
                         <h1>link</h1>
                     </div>
-                    <div className=' tablet:text-xl mobile:text-md space-y-2 '>
+                    <div className=' tablet:text-xl font mobile:text-md space-y-2 '>
                         <p>Your Client Name</p>
                         <p>Interiors</p>
                         <p>Interior, Home</p>
@@ -95,7 +95,7 @@ const Projectdetail = () => {
                     </div>
                 </div>
                 <div className='tablet:w-[50%] tablet:mt-0 mobile:mt-10'>
-                    <h1 className='text-4xl font-bold mb-5'>Minimal Look Bedrooms</h1>
+                    <h1 className='text-4xl font text-[#292F36] mb-5'>Minimal Look Bedrooms</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus. Aliquam sollicitudin tellumassa, vbel maximus purus posuere in. Dojrices gravida dignissim. Praesent at nibh in mi fringilla mattis. Phasellus ut dolor odio. Aenean in the ipsum vel lectus bibendum commodo.
                         <br /><br />
                         In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc, mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin tincidunt ligula id purus porttitor.</p>
@@ -104,9 +104,9 @@ const Projectdetail = () => {
 
 
             {/* *************** section 2 ********************** */}
-            <div className='relative'>
+            <div className=''>
             <img src="Image (5).png" className='tablet:w-[1000px] mt-44 tablet:mx-auto hover:scale-105 duration-700' />
-            <div className='w-20 h-20 mx-auto bg-white rounded-full hover:scale-105 duration-700 absolute align-middle tablet:top-80 mobile:top-32 right-0 left-0 p-6'><BsSearch className='text-[#CDA274]  text-2xl mx-auto font-bold' /></div>
+            {/* <div className='w-20 h-20 mx-auto bg-white rounded-full hover:scale-105 duration-700 absolute align-middle tablet:top-80 mobile:top-32 right-0 left-0 p-6'><BsSearch className='text-[#CDA274]  text-2xl mx-auto font-bold' /></div> */}
             </div>
           
           {/* ***************** footer ********************* */}
@@ -114,7 +114,7 @@ const Projectdetail = () => {
                 <div className='laptop:col-span-2 tablet:w-80 '>
                     <div className='flex  '>
                         <img src='./logo.png' className='w-8 h-7 mt-2 mx-1' />
-                        <h1 className='font-bold text-4xl text-[#292F36] font-sans'>Interno</h1>
+                        <h1 className='font text-4xl text-[#292F36] '>Interno</h1>
                     </div>
                     <p className='py-4'>It is a long established fact that a reader will be distracted lookings.</p>
                     <div className='flex justify-between w-44'>
@@ -126,7 +126,7 @@ const Projectdetail = () => {
                 </div>
 
                 <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-                    <li className='hover:text-yellow-900 cursor-pointer'><h1 className='font-bold text-2xl'>Pages</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer font'><h1 className='font-bold text-2xl'>Pages</h1></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>  <Link to='/about'>AboutUs</Link></p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Projects</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Teams</p></li>
@@ -134,7 +134,7 @@ const Projectdetail = () => {
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p> <Link to='/services'>Services</Link></p></li>
                 </div>
                 <div className='list-none space-y-7 '>
-                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><h1 className='font-bold text-2xl'>Services</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font'><h1 className='font-bold text-2xl'>Services</h1></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Kitchen</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Living Area</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Bathroom</p></li>
@@ -142,7 +142,7 @@ const Projectdetail = () => {
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Bedroom</p></li>
                 </div>
                 <div className='list-none space-y-7 '>
-                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><h1 className='font-bold text-2xl'>Contact</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font' ><h1 className='font-bold text-2xl'>Contact</h1></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><p> 55 East Birchwood Ave. Brooklyn, New York 11201</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><p> contact@interno.com</p></li>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><p>(123) 456 - 7890</p></li>

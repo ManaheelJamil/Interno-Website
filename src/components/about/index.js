@@ -39,7 +39,7 @@ const AboutUs = () => {
       <div className={`flex  justify-around tablet:w-full   py-5 top-0 left-0 right-0  fixed   mx-auto   ${scrolled ? 'bg-white' : 'bg-white'}`} class=' flex justify-around tablet:w-full relative  py-5'>
         <div className='flex '>
           <img src='./logo.png' className='w-5 h-5 mt-2 mx-1' />
-          <h1 className='font-bold text-2xl text-[#292F36] font-sans'>Interno</h1>
+          <h1 className=' text-2xl text-[#292F36] font '>Interno</h1>
         </div>
         <div>
           <ul class=' tablet:flex  mobile:hidden tablet:block tablet:space-x-5 laptop:space-x-10 text-[#292F36] font-semibold'>
@@ -73,11 +73,11 @@ const AboutUs = () => {
       <img src='banner.png' />
 
       <div className='tablet:w-96 mobile:w-60 p-10  bg-white tablet:top-52 mobile:top-24 left-0 right-0 absolute mx-auto  tablet:h-[800px] mobile:h-[650px]  rounded-[30px] text-center   text-[#292F36]'>
-        <h1 className='tablet:text-4xl mobile:text-2xl font-semibold'>About Us</h1>
+        <h1 className='tablet:text-4xl mobile:text-2xl font '>About Us</h1>
         <p>Home / About Us</p>
       </div>
       <div className='pt-20 rounded-[40px] tablet:mx-auto mobile:mx-2 text-center tablet:w-[600px] text-[#292F36] h-80 mt-40 border-[13px] border-[#F4F0EC]'>
-        <h1 className='tablet:text-2xl mobile:text-lg mx-5  absolute italic tablet:mx-10 tablet:w-[500px]'>I like an interior that defies labeling. I don't really want someone to walk into a room and know that I did it<br /> <p className='text-xl mt-4 font-light'>-BUNNY WILLIAMS</p></h1>
+        <h1 className='tablet:text-2xl mobile:text-lg mx-5  absolute font italic tablet:mx-10 tablet:w-[500px]'>I like an interior that defies labeling. I don't really want someone to walk into a room and know that I did it<br /> <p className='text-xl mt-4 font-light'>-BUNNY WILLIAMS</p></h1>
       </div>
 
 
@@ -87,7 +87,7 @@ const AboutUs = () => {
 
       <div className='tablet:flex tablet:w-[900px] tablet:mt-60 mobile:mt-40 mobile:mx-5 justify-between tablet:mx-auto'>
         <div className='tablet:w-96'>
-          <h1 className='text-3xl font-bold'>What We Do</h1><p className='py-3'>It is a long established fact that a reader will be distracted by the of readable content of a page
+          <h1 className='text-3xl font '>What We Do</h1><p className='py-3'>It is a long established fact that a reader will be distracted by the of readable content of a page
             when lookings at its layouts the points of using
             that it has a more-or-less normal.</p>
           <button className='bg-[#292F36] rounded-xl text-sm flex justify-center w-36 py-4 mt-5 text-white '>Over Concept &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-[#CDA274]' /></button>
@@ -104,7 +104,7 @@ const AboutUs = () => {
         </div>
         <div className='tablet:w-96'>
 
-          <h1 className='text-3xl font-bold'>The End Result</h1><p className='py-3'>It is a long established fact that a reader will be distracted by the of readable content of a page
+          <h1 className='text-3xl font '>The End Result</h1><p className='py-3'>It is a long established fact that a reader will be distracted by the of readable content of a page
             when lookings at its layouts the points of using
             that it has a more-or-less normal.</p>
           <button className='bg-[#292F36] rounded-xl text-sm flex justify-center w-36 py-4 mt-5 text-white '>Our Portfolio &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-[#CDA274]' /></button>
@@ -114,13 +114,13 @@ const AboutUs = () => {
       {/* ************** section 3 ****************** */}
 
       <div className='bg-[#F4F0EC] text-center py-24 mt-10 mx-auto'>
-        <h1 className='text-3xl mx-auto  mt-32 tablet:w-96 font-bold text-[#292F36]'>What the People Thinks
+        <h1 className='text-3xl mx-auto  mt-32 tablet:w-96  font text-[#292F36]'>What the People Thinks
           About Us</h1>
         <div className='tablet:w-[850px] mx-auto mt-10  flex flex-wrap gap-5 justify-around'>
           <img src="Image (7).png" className='w-48 h-72' />
           <img src="image 2.png" className='w-48 h-72' />
           <div className='bg-white tablet:w-52 mobile:w-48 rounded-[20px] pt-16'>
-            <h1 className='text-xl  font-semibold'>Nattasha Julie</h1>
+            <h1 className='text-xl font '>Nattasha Julie</h1>
             <p className='text-xs'>Design, Australia</p>
             <div className='flex justify-between mx-auto mt-10 w-32'>
               <FaFacebookF />
@@ -137,7 +137,7 @@ const AboutUs = () => {
       </div>
       {/* ***************** section 4**************** */}
       <div className='tablet:w-[680px] mx-auto text-center '>
-        <h1 className='tablet:text-3xl mobile:text-2xl tablet:mx-auto mx-5 text-center pt-36  tablet:w-96 font-semibold text-[#292F36]'>Creative project? Let's have
+        <h1 className='tablet:text-3xl mobile:text-2xl tablet:mx-auto mx-5 font text-center pt-36  tablet:w-96  text-[#292F36]'>Creative project? Let's have
           a productive talk.</h1>
         <div className='mt-10 grid tablet:grid-cols-2 mobile:grid-cols-1 gap-10 mx-5'>
           <input type='text' placeholder='Name' className='tablet:w-80 border-b-2 border-[#292F36] pb-2        ' />
@@ -153,7 +153,7 @@ const AboutUs = () => {
         <div className='laptop:col-span-2 tablet:w-80 '>
           <div className='flex  '>
             <img src='./logo.png' className='w-8 h-7 mt-2 mx-1' />
-            <h1 className='font-bold text-4xl text-[#292F36] font-sans'>Interno</h1>
+            <h1 className=' text-4xl text-[#292F36] font'>Interno</h1>
           </div>
           <p className='py-4'>It is a long established fact that a reader will be distracted lookings.</p>
           <div className='flex justify-between w-44'>
@@ -165,7 +165,7 @@ const AboutUs = () => {
         </div>
 
         <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-          <li className='hover:text-yellow-900 cursor-pointer'><h1 className='font-bold text-2xl'>Pages</h1></li>
+          <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>About Us</p></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Projects</p></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Teams</p></li>
@@ -173,7 +173,7 @@ const AboutUs = () => {
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Services</p></li>
         </div>
         <div className='list-none space-y-7 '>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><h1 className='font-bold text-2xl'>Services</h1></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font'><h1 className=' text-2xl'>Services</h1></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Kitchen</p></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Living Area</p></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Bathroom</p></li>
@@ -181,7 +181,7 @@ const AboutUs = () => {
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Bedroom</p></li>
         </div>
         <div className='list-none space-y-7 '>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><h1 className='font-bold text-2xl'>Contact</h1></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font' ><h1 className='font-semibold text-2xl'>Contact</h1></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><p> 55 East Birchwood Ave. Brooklyn, New York 11201</p></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><p> contact@interno.com</p></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold' ><p>(123) 456 - 7890</p></li>
