@@ -47,7 +47,7 @@ const Services = () => {
                         <li className='hover:text-yellow-800'><a href="/">Pages</a></li>
                         <li className='hover:text-yellow-800'><Link to='/services'>Services</Link></li>
                         <li className='hover:text-yellow-800'><Link to='/project'>Project</Link></li>
-                        <li className='hover:text-yellow-800'><a href="/">Blog </a></li>
+                        <li className='hover:text-yellow-800'><Link to='/Articles'>Blog</Link></li>
                         <li className='hover:text-yellow-800'><a href="/">Contact</a></li>
                         <li className='text-2xl'><FiSearch /></li>
                     </ul>
@@ -60,9 +60,9 @@ const Services = () => {
                     <div className='absolute w-[100vw]  list-none open tablet:hidden mobile:block  bg-white mt-10   space-y-4 py-10 text-[#292F36] content-center	 text-center  tablet:space-x-5 laptop:space-x-10  font-semibold'>
                         <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#">Home</a></li>
                         <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#pages">Pages</a></li>
-                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#services">Services</a></li>
-                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#project">Project</a></li>
-                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#blog">Blog </a></li>
+                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><Link to='/services'>Services</Link></li>
+                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><Link to='/project'>Project</Link></li>
+                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><Link to='/Articles'>Blog</Link></li>
                         <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#contact">Contact</a></li>
                     </div>)}
             </div>

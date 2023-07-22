@@ -10,19 +10,13 @@ import Services from './components/services'
 import ServiceSample from "./components/serviceSample";
 import Project from "./components/Projects";
 import Projectdetail from "./components/Projectdetail"
+import Articles from "./components/Articles&News";
+import BlogDetails from "./components/BlogDetails";
 function App() {
   return (
     <>
 
       <Router>
-        {/* <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/about'>AboutUs</Link>
-          </li>
-        </ul> */}
         <Routes>
           <Route path="/" element={<Home />}/>   
           <Route path="/about" element={<AboutUs />}/>
@@ -30,6 +24,8 @@ function App() {
           <Route path="/serviceSample" element={<ServiceSample/>}/>
           <Route path="/Project" element={<Project />}/>
           <Route path="/Projectdetail" element={<Projectdetail />}/>
+          <Route path="/Articles" element={<Articles />}/>
+          <Route path="/BlogDetails" element={<BlogDetails />}/>
         </Routes>
       </Router>
 

@@ -51,7 +51,7 @@ const Navbar = () => {
                         <li className='hover:text-yellow-800'><a href="/">Pages</a></li>
                         <li className='hover:text-yellow-800'><Link to='/services'>Services</Link></li>
                         <li className='hover:text-yellow-800'><Link to='/project'>Project</Link></li>
-                        <li className='hover:text-yellow-800'><a href="/">Blog </a></li>
+                        <li className='hover:text-yellow-800'><Link to='/Articles'>Blog</Link></li>
                         <li className='hover:text-yellow-800'><a href="/">Contact</a></li>
                         <li className='text-2xl'><FiSearch /></li>
                     </ul>
@@ -65,8 +65,8 @@ const Navbar = () => {
                         <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#">Home</a></li>
                         <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#pages">Pages</a></li>
                         <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><Link to='/services'>Services</Link></li>
-                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#project">Project</a></li>
-                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#blog">Blog </a></li>
+                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><Link to='/project'>Project</Link></li>
+                        <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><Link to='/Articles'>Blog</Link></li>
                         <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#contact">Contact</a></li>
                     </div>)}
             </div>

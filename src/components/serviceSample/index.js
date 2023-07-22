@@ -51,7 +51,7 @@ const ServiceSample = () => {
                         <li className='hover:text-yellow-800'><a href="#pages">Pages</a></li>
                         <li className='hover:text-yellow-800'><Link to='/services'>Services</Link></li>
                         <li className='hover:text-yellow-800'><Link to='/project'>Project</Link></li>
-                        <li className='hover:text-yellow-800'><a href="#blog">Blog </a></li>
+                        <li className='hover:text-yellow-800'><Link to='/Articles'>Blog</Link></li>
                         <li className='hover:text-yellow-800'><a href="#contact">Contact</a></li>
                         <li className='text-2xl'><FiSearch /></li>
                     </ul>
