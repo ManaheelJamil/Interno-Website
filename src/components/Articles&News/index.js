@@ -46,12 +46,12 @@ const Articles = () => {
         </div>
         <div>
           <ul class=' tablet:flex  mobile:hidden tablet:block tablet:space-x-5 laptop:space-x-10 text-[#292F36] font-semibold'>
-            <li className='hover:text-yellow-800'><a href="#">Home</a></li>
-            <li className='hover:text-yellow-800'><a href="#pages">Pages</a></li>
+            <li className='hover:text-yellow-800'><a href="/">Home</a></li>
+            <li className='hover:text-yellow-800'><a href="/">Pages</a></li>
             <li className='hover:text-yellow-800'><Link to='/services'>Services</Link></li>
             <li className='hover:text-yellow-800'><Link to='/project'>Project</Link></li>
             <li className='hover:text-yellow-800'><Link to='/Articles'>Blog</Link></li>
-            <li className='hover:text-yellow-800'><a href="#contact">Contact</a></li>
+            <li className='hover:text-yellow-800'><a href="/ContactUs">Contact</a></li>
             <li className='text-2xl'><FiSearch /></li>
           </ul>
         </div>
@@ -61,12 +61,12 @@ const Articles = () => {
         </div>
         {isOpen && (
           <div className='absolute w-[100vw]  list-none open tablet:hidden mobile:block  bg-white mt-10   space-y-4 py-10 text-[#292F36] content-center	 text-center  tablet:space-x-5 laptop:space-x-10  font-semibold'>
-            <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#">Home</a></li>
-            <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#pages">Pages</a></li>
+            <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="/">Home</a></li>
+            <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="/">Pages</a></li>
             <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><Link to='/services'>Services</Link></li>
             <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><Link to='/project'>Project</Link></li>
             <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><Link to='/Articles'>Blog</Link></li>
-            <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="#contact">Contact</a></li>
+            <li className='hover:text-yellow-800 cursor-pointer' onClick={handleClick}><a href="/ContactUs">Contact</a></li>
           </div>)}
       </div>
 
@@ -206,12 +206,12 @@ const Articles = () => {
         </div>
 
         <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-          <li className='hover:text-yellow-900 cursor-pointer font'><h1 className='font-bold text-2xl'>Pages</h1></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold '><p>  <Link to='/about'>AboutUs</Link></p></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Projects</p></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Teams</p></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Contact Us</p></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p> <Link to='/services'>Services</Link></p></li>
+        <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
         </div>
         <div className='list-none space-y-7 '>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font'><h1 className='font-bold text-2xl'>Services</h1></li>

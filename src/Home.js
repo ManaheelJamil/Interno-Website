@@ -52,7 +52,7 @@ const Navbar = () => {
                         <li className='hover:text-yellow-800'><Link to='/services'>Services</Link></li>
                         <li className='hover:text-yellow-800'><Link to='/project'>Project</Link></li>
                         <li className='hover:text-yellow-800'><Link to='/Articles'>Blog</Link></li>
-                        <li className='hover:text-yellow-800'><a href="/">Contact</a></li>
+                        <li className='hover:text-yellow-800'><a href="/ContactUs">Contact</a></li>
                         <li className='text-2xl'><FiSearch /></li>
                     </ul>
                 </div>
@@ -85,27 +85,29 @@ const Navbar = () => {
 
             {/* *************section1**************** */}
 
-            <div className='laptop:w-[900px] tablet:w-[600px] tablet:gap-0 mobile:gap-5 mx-auto grid laptop:grid-cols-3 tablet:grid-cols-2  justify-center mt-32'>
-                <div className='w-64 text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
-                    <h1 className='text-xl  font  text-[#292F36]'>Project Plan</h1>
-                    <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
-                        available, majority.</p>
-                    <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 font-bold text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
-
+            <div className='laptop:w-[1000px] tablet:w-[600px] tablet:gap-0 mobile:gap-5 mx-auto grid laptop:grid-cols-3 tablet:grid-cols-2  justify-center mt-32'>
+            <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
+                    <Link to='/ServiceSample'> <h1 className='text-xl  font text-[#292F36]'>Project Plan</h1>
+                        <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 font-bold text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    </Link>
                 </div>
-                <div className='w-64 text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
-                    <h1 className='text-xl  font  text-[#292F36]'>Interior Work</h1>
-                    <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
-                        available, majority.</p>
-                    <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 font-bold text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
 
+                <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
+                    <Link to='/ServiceSample'>   <h1 className='text-xl  font text-[#292F36]'>Interior Work</h1>
+                        <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 font-bold text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    </Link>
                 </div>
-                <div className='w-64 text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
-                    <h1 className='text-xl  font text-[#292F36]'>Realization</h1>
-                    <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
-                        available, majority.</p>
-                    <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 font-bold text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
-
+                <div className='w-72 px-10 h-64 pt-10 hover:bg-[#F4F0EC]  cursor-pointer hover:rounded-[30px] text-center tablet:border-r tablet:border-l tablet:border-b-0 mobile:border-b'>
+                    <Link to='/ServiceSample'>
+                        <h1 className='text-xl  font text-[#292F36]'>Realization</h1>
+                        <p className='text-[#292F36]  mt-3'>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <button className='rounded-xl text-sm mx-auto flex justify-center w-36 py-4 mt-5 font-bold text-[#292F36]'>Read More &nbsp;<HiOutlineArrowNarrowRight className='text-xl text-yellow-700' /></button>
+                    </Link>
                 </div>
             </div>
 
@@ -344,12 +346,12 @@ const Navbar = () => {
                 </div>
 
                 <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-                    <li className='hover:text-yellow-900 cursor-pointer font'><h1 className='font-bold text-2xl'>Pages</h1></li>
-                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold '><p>  <Link to='/about'>AboutUs</Link></p></li>
-                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Projects</p></li>
-                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Our Teams</p></li>
-                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p>Contact Us</p></li>
-                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><p> <Link to='/services'>Services</Link></p></li>
+                <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
+          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
                 </div>
                 <div className='list-none space-y-7 '>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font'><h1 className='font-bold text-2xl'>Services</h1></li>
