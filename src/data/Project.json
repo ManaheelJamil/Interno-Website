@@ -2,13 +2,123 @@
     {
         "id": 1,
         "category": "Bedroom",
-        "image": "/frontend/public/images/BHAP01.png",
+        "image": "one.png",
         "title": "Minimal Bedroom",
         "subTitle": "Decore/Architecture",
-        "description": "It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points spriof using that it has a more less normal.A wonderful serenity has taken pgossession of my entire soul, like thesce sweet morndsings of sphring which I enjoy with my forwhole heart. I am alone, and feel the charm of excgistence in this spot, which was created for the bliss of souls like mine.when lookings at its layouts the points spriof using that it has a more less normal.A wonderful serenity has taken pgossession of my entire soul, like thesce sweet morndsings of sphring which I enjoy with my forwhole heart. I am alone, and feel the charm of excgistence in this spot, which was created for the bliss of souls like mine.",
         "furtherDetails": [
             {
-                "clinet": "Your Client Name",
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Home",
+                "Date": "23,02, 2022",
+                "Link": "#"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "category": "Bedroom",
+        "image": "two.png",
+        "title": "Minimal Bedroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Home",
+                "Date": "23,02, 2022",
+                "Link": "#"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "category": "Bedroom",
+        "image": "three.png",
+        "title": "Minimal Bedroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Home",
+                "Date": "23,02, 2022",
+                "Link": "#"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "category": "Bedroom",
+        "image": "four.png",
+        "title": "Minimal Bedroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Home",
+                "Date": "23,02, 2022",
+                "Link": "#"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "category": "Bedroom",
+        "image": "five.png",
+        "title": "Minimal Bedroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Home",
+                "Date": "23,02, 2022",
+                "Link": "#"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "category": "Bedroom",
+        "image": "six.png",
+        "title": "Minimal Bedroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Home",
+                "Date": "23,02, 2022",
+                "Link": "#"
+            }
+        ]
+    }, {
+        "id": 7,
+        "category": "Bedroom",
+        "image": "seven.png",
+        "title": "Minimal Bedroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Home",
+                "Date": "23,02, 2022",
+                "Link": "#"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "category": "Bedroom",
+        "image": "eight.png",
+        "title": "Minimal Bedroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
                 "category": "Interiors",
                 "Tag": "Home",
                 "Date": "23,02, 2022",

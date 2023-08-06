@@ -12,6 +12,7 @@ import { BiLogoLinkedin } from "react-icons/bi"
 import { FaInstagram } from "react-icons/fa"
 import { AiOutlineCopyrightCircle } from "react-icons/ai"
 import { Link } from 'react-router-dom';
+import ProjectData from "../../data/Project.json"
 const Project = () => {
     const [scrolled, setScrolled] = useState(false);
     const [Open, setOpen] = useState(false);
@@ -90,117 +91,25 @@ const Project = () => {
 
             {/* ************** section no 2 ****************** */}
             <div className='tablet:w-[1000px] mt-20 tablet:mx-auto mobile:mx-5 gap-10 grid tablet:grid-cols-2'>
-                <div>
-                 <Link to="/Projectdetail"> <img src="one.png" className='w-[100%]' />
-                    <div className='flex justify-between tablet:w-96 mt-3'>
-                        <div>
-                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
-                            <p className='text-[#292F36]'>Decor / Artchitecture</p>
-                        </div>
-                        <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
-                            <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
-                        </div>
-                    </div>
-                    </Link>  
-                </div>
-
-                <div>
-                <Link to="/Projectdetail">        <img src="two.png" className='w-[100%]' />
-                    <div className='flex justify-between tablet:w-96 mt-3'>
-                        <div>
-                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
-                            <p className='text-[#292F36]'>Decor / Artchitecture</p>
-                        </div>
-                        <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
-                            <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
-                        </div>
-                    </div>
-                    </Link>
-                </div>
-
-                <div>
-                <Link to="/Projectdetail">   <img src="three.png" className='w-[100%]' />
-                    <div className='flex justify-between tablet:w-96 mt-3'>
-                        <div>
-                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
-                            <p className='text-[#292F36]'>Decor / Artchitecture</p>
-                        </div>
-                        <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
-                            <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
-                        </div>
-                    </div>
-                    </Link>
-                </div>
-
-                <div className='tablet:mt-[-60%]'>
-                <Link to="/Projectdetail">      <img src="four.png" className='w-[100%]' />
-                    <div className='flex justify-between tablet:w-96 mt-3'>
-                        <div>
-                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
-                            <p className='text-[#292F36]'>Decor / Artchitecture</p>
-                        </div>
-                        <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
-                            <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
-                        </div>
-                    </div>
-                    </Link>
-                </div>
-
-                <div>
-                <Link to="/Projectdetail">          <img src="five.png" className='w-[100%]' />
-                    <div className='flex justify-between tablet:w-96 mt-3'>
-                        <div>
-                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
-                            <p className='text-[#292F36]'>Decor / Artchitecture</p>
-                        </div>
-                        <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
-                            <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
-                        </div>
-                    </div>
-                    </Link>
-                </div>
-
-                <div>
-                <Link to="/Projectdetail">         <img src="six.png" className='w-[100%]' />
-                    <div className='flex justify-between tablet:w-96 mt-3'>
-                        <div>
-                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
-                            <p className='text-[#292F36]'>Decor / Artchitecture</p>
-                        </div>
-                        <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
-                            <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
-                        </div>
-                    </div>
-                    </Link>
-                </div>
-
-                <div>
-                <Link to="/Projectdetail">     <img src="seven.png" className='w-[100%]' />
-                    <div className='flex justify-between tablet:w-96 mt-3'>
-                        <div>
-                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
-                            <p className='text-[#292F36]'>Decor / Artchitecture</p>
-                        </div>
-                        <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
-                            <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
-                        </div>
-                    </div>
-                    </Link>
-                </div>
-
-                <div className='tablet:mt-[-60%]'>
-                <Link to="/Projectdetail">    <img src="eight.png" className='w-[100%]' />
-                    <div className='flex justify-between tablet:w-96 mt-3'>
-                        <div>
-                            <h1 className='text-[#292F36] text-xl font'>Minimal Bedroom</h1>
-                            <p className='text-[#292F36]'>Decor / Artchitecture</p>
-                        </div>
-                        <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
-                            <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
-                        </div>
-                    </div>
-                    </Link>
-                </div>
+         {ProjectData?ProjectData.map((item)=>{
+return(
+    <div>
+    <Link to="/Projectdetail"> <img src={item.image} className='w-[100%]' />
+       <div className='flex justify-between tablet:w-96 mt-3'>
+           <div>
+               <h1 className='text-[#292F36] text-xl font'>{item.title}</h1>
+               <p className='text-[#292F36]'>{item.subTitle}</p>
+           </div>
+           <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
+               <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
+           </div>
+       </div>
+       </Link>  
+   </div>
+)
+         }):"loading....."
+        }
+           
 
             </div>
 

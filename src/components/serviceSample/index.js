@@ -12,6 +12,7 @@ import { BiLogoLinkedin } from "react-icons/bi"
 import { FaInstagram } from "react-icons/fa"
 import { AiOutlineCopyrightCircle } from "react-icons/ai"
 import { Link } from 'react-router-dom';
+import ServiceData from "../../data/Services.json"
 const ServiceSample = () => {
     const [scrolled, setScrolled] = useState(false);
     const [Open, setOpen] = useState(false);
@@ -84,19 +85,23 @@ const ServiceSample = () => {
             {/* *************section1**************** */}
 
             <div className='tablet:w-[900px] mx-auto mt-44 tablet:flex m-10 gap-10 justify-between'>
-                <div className='tablet:w-[50%] m-5'>
-                    <h1 className='text-4xl font text-[#3d444b]'>We set the trends of
-                        modern living
-                        Services.</h1>
-                </div>
-                <div className='tablet:w-[70%] m-5'>
-                    < p className=' text-lg text-[#CDA274] font-semibold'>It is a long established fact that a reader will be distracted by the of readable content of a page</p>
+                {ServiceData ? ServiceData.map((item) => {
+                    return (<div>
+                        <div className='tablet:w-[50%] m-5'>
+                            <h1 className='text-4xl font text-[#3d444b]'>{item.mainHeading}.</h1>
+                        </div>
+                        <div className='tablet:w-[70%] m-5'>
+                            < p className=' text-lg text-[#CDA274] font-semibold'>{item.description}</p>
 
-                    <p className='text-[#292F36] my-10'> when lookings at its layouts the points spriof using that it has a more
-                        less normal.A wonderful serenity has taken pgossession of my entire soul, like thesce sweet morndsings of sphring which I enjoy with my forwhole heart. I am alone, and feel the charm of excgistence in this spot, which was created for the bliss of souls like mine.</p>
-                    <p>when lookings at its layouts the points spriof using that it has a more
-                        less normal.A wonderful serenity has taken pgossession of my entire soul, like thesce sweet morndsings of sphring which I enjoy with my forwhole heart. I am alone, and feel the charm of excgistence in this spot, which was created for the bliss of souls like mine.</p>
-                </div>
+                            <p className='text-[#292F36] my-10'> when lookings at its layouts the points spriof using that it has a more
+                                less normal.A wonderful serenity has taken pgossession of my entire soul, like thesce sweet morndsings of sphring which I enjoy with my forwhole heart. I am alone, and feel the charm of excgistence in this spot, which was created for the bliss of souls like mine.</p>
+                            <p>when lookings at its layouts the points spriof using that it has a more
+                                less normal.A wonderful serenity has taken pgossession of my entire soul, like thesce sweet morndsings of sphring which I enjoy with my forwhole heart. I am alone, and feel the charm of excgistence in this spot, which was created for the bliss of souls like mine.</p>
+                        </div>
+                    </div>)
+                }) : "loading...."
+                }
+
             </div>
 
             {/* ******************* section 2******************* */}
@@ -191,12 +196,12 @@ const ServiceSample = () => {
                 </div>
 
                 <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-                <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
                 </div>
                 <div className='list-none space-y-7 '>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><h1 className='font-bold text-2xl'>Services</h1></li>
