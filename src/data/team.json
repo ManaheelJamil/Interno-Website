@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "heading": "Charlotte Levi",
+        "descriptions": "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrpobelie frandomised words which don't look even slightly believable.",
+        "image":"/Image (7).png"
+    },
+    {
+        "id": 2,
+        "heading": "Nattasha Julie ",
+        "descriptions": "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrpobelie frandomised words which don't look even slightly believable.",
+        "image":"/image 2.png"
+    },
+    {
+        "id": 3,
+        "heading": "John Smith",
+        "descriptions": "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrpobelie frandomised words which don't look even slightly believable.",
+        "image":"/third.png"
+    },
+    {
+        "id": 4,
+        "heading": "Nora Owen",
+        "descriptions": "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrpobelie frandomised words which don't look even slightly believable.",
+        "image":"/image 3.png"
+    },
+    {
+        "id": 5,
+        "heading": "Sofia Carter",
+        "descriptions": "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrpobelie frandomised words which don't look even slightly believable.",
+        "image":"/fifth.jpg"
+    },
+    {
+        "id": 6,
+        "heading": "Avery Jackson",
+        "descriptions": "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrpobelie frandomised words which don't look even slightly believable.",
+        "image":"/sixth.jpg"
+    },
+    {
+        "id": 7,
+        "heading": " Luna James",
+        "descriptions": "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrpobelie frandomised words which don't look even slightly believable.",
+        "image":"/seventh.jpg"
+    },
+    {
+        "id": 8,
+        "heading": "Gianna Mateo",
+        "descriptions": "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrpobelie frandomised words which don't look even slightly believable.",
+        "image":"/eight.jpg"
+    }
+]

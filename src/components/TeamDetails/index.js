@@ -3,22 +3,24 @@ import { FiSearch } from "react-icons/fi"
 import { FaBars } from "react-icons/fa"
 import { useState, useEffect } from 'react';
 import { HiOutlineArrowNarrowRight } from "react-icons/hi"
-// import { IoCallOutline } from "react-icons/io5"
-// import { HiOutlineArrowNarrowRight } from "react-icons/hi"
-// import { MdKeyboardArrowRight } from 'react-icons/md'
 import { FaFacebookF } from "react-icons/fa"
 import { BsTwitter } from "react-icons/bs"
 import { BiLogoLinkedin } from "react-icons/bi"
 import { FaInstagram } from "react-icons/fa"
 import { AiOutlineCopyrightCircle } from "react-icons/ai"
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { FaLinkedinIn } from "react-icons/fa"
 import { FaRegEnvelope } from "react-icons/fa"
 import { IoCallOutline } from "react-icons/io5"
 import { GiWorld } from 'react-icons/gi'
 import { AiOutlinePlus } from "react-icons/ai"
 import { AiOutlineMinus } from "react-icons/ai"
-const TeamDetails2 = () => {
+import teamData from "../../data/team.json"
+const TeamDetail = (props) => {
+    const param = useParams()
+    const filteredItems = teamData.filter(item => item.id === parseInt(param.id));
+    const finalData = filteredItems[0]
+  console.log("hello", finalData)
     const [scrolled, setScrolled] = useState(false);
     const [Open, setOpen] = useState(false);
     useEffect(() => {
@@ -47,13 +49,13 @@ const TeamDetails2 = () => {
 
             <div className={`flex  justify-around tablet:w-full   py-5 top-0 left-0 right-0  fixed   mx-auto   ${scrolled ? 'bg-white' : 'bg-white'}`} class=' flex justify-around tablet:w-full relative  py-5'>
                 <div className='flex '>
-                    <img src='./logo.png' className='w-5 h-5 mt-2 mx-1' />
+                    <img src='/logo.png' className='w-5 h-5 mt-2 mx-1' />
                     <h1 className='font text-2xl text-[#292F36] font-sans'>Interno</h1>
                 </div>
                 <div>
                     <ul class=' tablet:flex  mobile:hidden tablet:block tablet:space-x-5 laptop:space-x-10 text-[#292F36] font-semibold'>
                         <li className='hover:text-yellow-800'><a href="/">Home</a></li>
-                        <li className='hover:text-yellow-800'><a href="/">Pages</a></li>
+                        <li className='hover:text-yellow-800'><a href="#pages">Pages</a></li>
                         <li className='hover:text-yellow-800'><Link to='/services'>Services</Link></li>
                         <li className='hover:text-yellow-800'><Link to='/project'>Project</Link></li>
                         <li className='hover:text-yellow-800'><Link to='/Articles'>Blog</Link></li>
@@ -79,7 +81,7 @@ const TeamDetails2 = () => {
             {/* *********** hero section ************** */}
 
 
-            <img src='teamBanner.jpg' className='w-full ' />
+            <img src='/teamBanner.jpg' className='w-full ' />
 
             <div className='tablet:w-96 mobile:w-60 p-10   tablet:top-52 mobile:top-24 left-0 right-0 absolute mx-auto desktop:h-52 laptop:h-40 bg-white rounded-[30px] text-center   text-[#292F36]'>
                 <h1 className='tablet:text-4xl mobile:text-2xl font'> Professional Single</h1>
@@ -87,33 +89,36 @@ const TeamDetails2 = () => {
             </div>
 
             {/* ******************* section 1 ******************* */}
+            
             <div className='tablet:w-[800px]  text-[#292F36]  mt-32 tablet:mx-auto mobile:mx-5 tablet:flex gap-10'>
-                <div className=''>
-                    <img src='image 2.png' className='tablet:w-[250px] tablet:h-[350px] rounded-3xl' />
-                </div>
-                <div className='tablet:w-96 mt-6'>
-                    <h1 className='font text-3xl'>Nattasha Julie</h1>
-                    <p>Designer</p>
-                    <p className='py-3 text-sm'>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrpobelie frandomised words which don't look even slightly believable.</p>
-                    <div className='flex gap-5 py-2'>
-                        <FaRegEnvelope className='text-2xl text-[#CDA274] ' />
-                        <p>info@yourdomain.com</p>
-                    </div>
-                    <div className='flex gap-5 py-2'>
-                        <IoCallOutline className='text-2xl text-[#CDA274] ' />
-                        <p>+1 (378) 400-1234</p>
-                    </div>
-                    <div className='flex gap-5 py-2'>
-                        <GiWorld className='text-2xl text-[#CDA274] ' />
-                        <p>www.yourdomain.com</p>
-                    </div>
-                    <div className='flex  text-[#292F36]  text-sm my-3  justify-between w-32'>
-                        <FaFacebookF />
-                        <BsTwitter />
-                        <BiLogoLinkedin />
-                        <FaInstagram />
-                    </div>
-                </div>
+                        <div  className='tablet:w-[800px]  text-[#292F36]  mt-32 tablet:mx-auto mobile:mx-5 tablet:flex gap-10'>
+                            <div>
+                                <img src={finalData.image} className='tablet:w-[250px] tablet:h-[350px] rounded-3xl' />
+                            </div>
+                            <div className='tablet:w-96 mt-6'>
+                                <h1 className='font text-3xl'>{finalData.heading}</h1>
+                                <p>Designer</p>
+                                <p className='py-3 text-sm'>{finalData.descriptions}</p>
+                                <div className='flex gap-5 py-2'>
+                                    <FaRegEnvelope className='text-2xl text-[#CDA274] ' />
+                                    <p>info@yourdomain.com</p>
+                                </div>
+                                <div className='flex gap-5 py-2'>
+                                    <IoCallOutline className='text-2xl text-[#CDA274] ' />
+                                    <p>+1 (378) 400-1234</p>
+                                </div>
+                                <div className='flex gap-5 py-2'>
+                                    <GiWorld className='text-2xl text-[#CDA274] ' />
+                                    <p>www.yourdomain.com</p>
+                                </div>
+                                <div className='flex  text-[#292F36]  text-sm my-3  justify-between w-32'>
+                                    <FaFacebookF />
+                                    <BsTwitter />
+                                    <BiLogoLinkedin />
+                                    <FaInstagram />
+                                </div>
+                            </div>
+                        </div>
             </div>
             {/* ******************* section 2 **************** */}
             <div className='tablet:w-[800px] tablet:mx-auto mobile:mx-5 mt-20 text-[#292F36]'>
@@ -133,17 +138,17 @@ const TeamDetails2 = () => {
                         <h1>Project Design</h1>
                         <p>65%</p>
                     </div>
-                    <img src='lin1.png' />
+                    <img src='/lin1.png' />
                     <div className='flex tablet:w-96 mt-3 text-sm font-semibold justify-between'>
                         <h1>Team Management</h1>
                         <p>95%</p>
                     </div>
-                    <img src='line2.png' />
+                    <img src='/line2.png' />
                     <div className='flex tablet:w-80 mt-3 text-sm font-semibold justify-between'>
                         <h1>Client Satisfaction</h1>
                         <p>75%</p>
                     </div>
-                    <img src='line3.png' />
+                    <img src='/line3.png' />
                 </div>
 
                 <div >
@@ -175,8 +180,8 @@ const TeamDetails2 = () => {
                 <h1 className='text-3xl mx-auto  mt-12 tablet:w-96  font text-[#292F36]'>What the People Thinks
                     About Us</h1>
                 <div className='tablet:w-[850px] mx-auto mt-10  flex flex-wrap gap-5 justify-around'>
-                    <img src="Image (7).png" className='w-48 h-72' />
-                    <img src="image 2.png" className='w-48 h-72' />
+                    <img src="/Image (7).png" className='w-48 h-72' />
+                    <img src="/image 2.png" className='w-48 h-72' />
                     <div className='bg-white tablet:w-52 mobile:w-48 rounded-[20px] pt-16'>
                         <h1 className='text-xl font '>Nattasha Julie</h1>
                         <p className='text-xs'>Design, Australia</p>
@@ -189,7 +194,7 @@ const TeamDetails2 = () => {
                         <p className='text-md mt-10'>+1 (378) 400-1234<br />
                             julie@email.com</p>
                     </div>
-                    <img src="image 3.png" className='w-48 h-72' />
+                    <img src="/image 3.png" className='w-48 h-72' />
 
                 </div>
             </div>
@@ -214,7 +219,7 @@ const TeamDetails2 = () => {
             <div id="contact" className='tablet:w-[1000px] mt-40 text-[#292F36] mobile:mx-10 tablet:mx-auto mobile:space-y-10 tablet:space-y-0 grid laptop:grid-cols-5  tablet:grid-cols-3 '>
                 <div className='laptop:col-span-2 tablet:w-80 '>
                     <div className='flex  '>
-                        <img src='./logo.png' className='w-8 h-7 mt-2 mx-1' />
+                        <img src='/logo.png' className='w-8 h-7 mt-2 mx-1' />
                         <h1 className=' text-4xl text-[#292F36] font'>Interno</h1>
                     </div>
                     <p className='py-4'>It is a long established fact that a reader will be distracted lookings.</p>
@@ -227,12 +232,12 @@ const TeamDetails2 = () => {
                 </div>
 
                 <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-                <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
                 </div>
                 <div className='list-none space-y-7 '>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font'><h1 className=' text-2xl'>Services</h1></li>
@@ -256,4 +261,4 @@ const TeamDetails2 = () => {
     )
 }
 
-export default TeamDetails2
+export default TeamDetail

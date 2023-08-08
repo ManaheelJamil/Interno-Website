@@ -91,25 +91,25 @@ const Project = () => {
 
             {/* ************** section no 2 ****************** */}
             <div className='tablet:w-[1000px] mt-20 tablet:mx-auto mobile:mx-5 gap-10 grid tablet:grid-cols-2'>
-         {ProjectData?ProjectData.map((item)=>{
-return(
-    <div>
-    <Link to="/Projectdetail"> <img src={item.image} className='w-[100%]' />
-       <div className='flex justify-between tablet:w-96 mt-3'>
-           <div>
-               <h1 className='text-[#292F36] text-xl font'>{item.title}</h1>
-               <p className='text-[#292F36]'>{item.subTitle}</p>
-           </div>
-           <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
-               <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
-           </div>
-       </div>
-       </Link>  
-   </div>
-)
-         }):"loading....."
-        }
-           
+                {ProjectData ? ProjectData.map((item) => {
+                    return (
+                        <div>
+                            <Link to={"/Projectdetail/" + item.id}> <img src={item.image} className='w-[100%]' />
+                                <div className='flex justify-between tablet:w-96 mt-3'>
+                                    <div>
+                                        <h1 className='text-[#292F36] text-xl font'>{item.title}</h1>
+                                        <p className='text-[#292F36]'>{item.subTitle}</p>
+                                    </div>
+                                    <div className='w-12 h-12 rounded-full flex justify-center bg-gray-300'>
+                                        <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-2' />
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    )
+                }) : "loading....."
+                }
+
 
             </div>
 
@@ -131,12 +131,12 @@ return(
                 </div>
 
                 <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-                <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
                 </div>
                 <div className='list-none space-y-7 '>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold font'><h1 className='font-bold text-2xl'>Services</h1></li>

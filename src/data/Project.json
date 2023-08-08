@@ -9,9 +9,9 @@
             {
                 "client": "Your Client Name",
                 "category": "Interiors",
-                "Tag": "Home",
-                "Date": "23,02, 2022",
-                "Link": "#"
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
             }
         ]
     },
@@ -25,9 +25,9 @@
             {
                 "client": "Your Client Name",
                 "category": "Interiors",
-                "Tag": "Home",
-                "Date": "23,02, 2022",
-                "Link": "#"
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
             }
         ]
     },
@@ -41,9 +41,9 @@
             {
                 "client": "Your Client Name",
                 "category": "Interiors",
-                "Tag": "Home",
-                "Date": "23,02, 2022",
-                "Link": "#"
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
             }
         ]
     },
@@ -57,9 +57,9 @@
             {
                 "client": "Your Client Name",
                 "category": "Interiors",
-                "Tag": "Home",
-                "Date": "23,02, 2022",
-                "Link": "#"
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
             }
         ]
     },
@@ -71,11 +71,12 @@
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
+                
                 "client": "Your Client Name",
                 "category": "Interiors",
-                "Tag": "Home",
-                "Date": "23,02, 2022",
-                "Link": "#"
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
             }
         ]
     },
@@ -87,11 +88,12 @@
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
+               
                 "client": "Your Client Name",
                 "category": "Interiors",
-                "Tag": "Home",
-                "Date": "23,02, 2022",
-                "Link": "#"
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
             }
         ]
     }, {
@@ -102,11 +104,12 @@
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
+              
                 "client": "Your Client Name",
                 "category": "Interiors",
-                "Tag": "Home",
-                "Date": "23,02, 2022",
-                "Link": "#"
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
             }
         ]
     },
@@ -118,11 +121,12 @@
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
+               
                 "client": "Your Client Name",
                 "category": "Interiors",
-                "Tag": "Home",
-                "Date": "23,02, 2022",
-                "Link": "#"
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
             }
         ]
     }

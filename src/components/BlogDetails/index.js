@@ -3,16 +3,19 @@ import { FiSearch } from "react-icons/fi"
 import { FaBars } from "react-icons/fa"
 import { useState, useEffect } from 'react';
 import { HiOutlineArrowNarrowRight } from "react-icons/hi"
-// import { IoCallOutline } from "react-icons/io5"
-// import { HiOutlineArrowNarrowRight } from "react-icons/hi"
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import { FaFacebookF } from "react-icons/fa"
 import { BsTwitter } from "react-icons/bs"
 import { BiLogoLinkedin } from "react-icons/bi"
 import { FaInstagram } from "react-icons/fa"
 import { AiOutlineCopyrightCircle } from "react-icons/ai"
-import { Link } from 'react-router-dom';
-const BlogDetails = () => {
+import { Link, useParams } from 'react-router-dom';
+import BlogData from "../../data/Blog.json"
+const BlogDetails = (props) => {
+  const param = useParams()
+  const filteredItems = BlogData.filter(item => item.id === parseInt(param.id));
+  const finalData = filteredItems[0]
+  console.log("hello", finalData)
   const [scrolled, setScrolled] = useState(false);
   const [Open, setOpen] = useState(false);
   useEffect(() => {
@@ -41,7 +44,7 @@ const BlogDetails = () => {
 
       <div className={`flex  justify-around tablet:w-full   py-5 top-0 left-0 right-0  fixed   mx-auto   ${scrolled ? 'bg-white' : 'bg-white'}`} class=' flex justify-around tablet:w-full relative  py-5'>
         <div className='flex '>
-          <img src='./logo.png' className='w-5 h-5 mt-2 mx-1' />
+          <img src='/logo.png' className='w-5 h-5 mt-2 mx-1' />
           <h1 className='font text-2xl text-[#292F36] '>Interno</h1>
         </div>
         <div>
@@ -73,52 +76,49 @@ const BlogDetails = () => {
       {/* *********** hero section ************** */}
 
 
-      <img src='Banner (3).jpg' className='w-full ' />
+      <img src='/Banner (3).jpg' className='w-full ' />
 
 
       {/* ***************** section 1 **************** */}
       <div className='tablet:w-[900px] tablet:mx-auto mobile:mx-5 mt-44'>
+            <h1 className='font tablet:text-5xl mobile:text-3xl tablet:w-[70%] text-[#292F36] '>{finalData.heading}
+            </h1>
+            <img src={finalData.image} className='tablet:w-[85%] mt-5' alt="one"/>
+            <div className='tablet:w-[85%] flex justify-between mt-7 text-[#292F36] '>
+              <p>26 December,2022 </p>
+              <p>Interior / Design / Home / Decore</p>
+            </div>
+            <p className='text-[#292F36]  mt-10 tablet:w-[85%] text-xl'>{finalData.description}</p>
+            <div className='tablet:w-[85%]  text-center text-[#CDA274] bg-[#F4F0EC] rounded-[50px] h-60'>
 
-        <h1 className='font tablet:text-5xl mobile:text-3xl tablet:w-[70%] text-[#292F36] '>Let’s Get Solution for Building
-          Construction Work</h1>
-        <img src='Image (12).png' className='tablet:w-[85%] mt-5' />
-        <div className='tablet:w-[85%] flex justify-between mt-7 text-[#292F36] '>
-          <p>26 December,2022 </p>
-          <p>Interior / Design / Home / Decore</p>
-        </div>
-        <p className='text-[#292F36]  mt-10 tablet:w-[85%] text-xl'>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.
-          <br /><br /><br />
-          Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.</p>
-        <div className='tablet:w-[85%]  text-center text-[#CDA274] bg-[#F4F0EC] rounded-[50px] h-60'>
-
-          <p className='italic font text-2xl mt-20 pt-24'>The details are not the details.<br />
-            They make the design.</p>
-        </div>
-        <h1 className='font text-5xl tablet:w-[70%] text-[#292F36] tablet:mt-10 mobile:mt-20 '>Design sprints are great</h1>
-        <p className='mt-3 text-lg tablet:w-[85%] text-[#292F36]'>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-        <p className='tablet:w-[70%] mt-5'>1
-          Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br /><br />
-          2
-          Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br /><br />
-          3
-          Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-        <img src='Image (13).png' className='tablet:w-[85%] my-10 ' />
-        <p className='tablet:w-[85%] text-lg'>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
-        <div className='tablet:w-[85%] text-[#292F36] mt-10 tablet:flex justify-between'>
-          <div className='flex space-x-5'>
-            <h1 className='text-xl mt-3 font-bold font'>Tags</h1>
-            <button className='bg-[#292F36] text-white rounded-xl w-32 py-4'>Kitchen</button>
-            <button className='bg-[#F4F0EC] text-[#292F36] rounded-xl w-32 py-4'>Bedroom</button>
-          </div>
-          <div className='flex justify-between mt-3 w-44'>
-            <FaFacebookF />
-            <BsTwitter />
-            <BiLogoLinkedin />
-            <FaInstagram />
-          </div>
-        </div>
-        <h1 className='font text-3xl mt-32 tablet:w-[70%] text-[#292F36] '>Leave a Reply
-        </h1>
+              <p className='italic font text-2xl mt-20 pt-24'>The details are not the details.<br />
+                They make the design.</p>
+            </div>
+            <h1 className='font text-5xl tablet:w-[70%] text-[#292F36] tablet:mt-10 mobile:mt-20 '>Design sprints are great</h1>
+            <p className='mt-3 text-lg tablet:w-[85%] text-[#292F36]'>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+            <p className='tablet:w-[70%] mt-5'>1
+              Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br /><br />
+              2
+              Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.<br /><br />
+              3
+              Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+            <img src={finalData.image} className='tablet:w-[85%] my-10 ' />
+            <p className='tablet:w-[85%] text-lg'>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+            <div className='tablet:w-[85%] text-[#292F36] mt-10 tablet:flex justify-between'>
+              <div className='flex space-x-5'>
+                <h1 className='text-xl mt-3 font-bold font'>Tags</h1>
+                <button className='bg-[#292F36] text-white rounded-xl w-32 py-4'>Kitchen</button>
+                <button className='bg-[#F4F0EC] text-[#292F36] rounded-xl w-32 py-4'>Bedroom</button>
+              </div>
+              <div className='flex justify-between mt-3 w-44'>
+                <FaFacebookF />
+                <BsTwitter />
+                <BiLogoLinkedin />
+                <FaInstagram />
+              </div>
+            </div>
+            <h1 className='font text-3xl mt-32 tablet:w-[70%] text-[#292F36] '>Leave a Reply
+            </h1>
       </div>
 
       {/* ***************** section 4**************** */}
@@ -144,7 +144,7 @@ const BlogDetails = () => {
       <div id="contact" className='tablet:w-[1000px] mt-40 text-[#292F36] mobile:mx-10 tablet:mx-auto mobile:space-y-10 tablet:space-y-0 grid laptop:grid-cols-5  tablet:grid-cols-3 '>
         <div className='laptop:col-span-2 tablet:w-80 '>
           <div className='flex  '>
-            <img src='./logo.png' className='w-8 h-7 mt-2 mx-1' />
+            <img src='/logo.png' className='w-8 h-7 mt-2 mx-1' />
             <h1 className=' text-4xl text-[#292F36] font'>Interno</h1>
           </div>
           <p className='py-4'>It is a long established fact that a reader will be distracted lookings.</p>
@@ -157,7 +157,7 @@ const BlogDetails = () => {
         </div>
 
         <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-        <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
+          <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>

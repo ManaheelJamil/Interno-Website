@@ -85,22 +85,23 @@ const ServiceSample = () => {
             {/* *************section1**************** */}
 
             <div className='tablet:w-[900px] mx-auto mt-44 tablet:flex m-10 gap-10 justify-between'>
-                {ServiceData ? ServiceData.map((item) => {
-                    return (<div>
+          
+          
                         <div className='tablet:w-[50%] m-5'>
-                            <h1 className='text-4xl font text-[#3d444b]'>{item.mainHeading}.</h1>
+                            <h1 className='text-4xl font text-[#3d444b]'>We set the trends of 
+                            modern living
+                            Services..</h1>
                         </div>
                         <div className='tablet:w-[70%] m-5'>
-                            < p className=' text-lg text-[#CDA274] font-semibold'>{item.description}</p>
+                            <p className=' text-lg text-[#CDA274] font-semibold'>It is a long established fact that a reader will be distracted by the of readable content of a page.</p>
 
                             <p className='text-[#292F36] my-10'> when lookings at its layouts the points spriof using that it has a more
                                 less normal.A wonderful serenity has taken pgossession of my entire soul, like thesce sweet morndsings of sphring which I enjoy with my forwhole heart. I am alone, and feel the charm of excgistence in this spot, which was created for the bliss of souls like mine.</p>
                             <p>when lookings at its layouts the points spriof using that it has a more
                                 less normal.A wonderful serenity has taken pgossession of my entire soul, like thesce sweet morndsings of sphring which I enjoy with my forwhole heart. I am alone, and feel the charm of excgistence in this spot, which was created for the bliss of souls like mine.</p>
                         </div>
-                    </div>)
-                }) : "loading...."
-                }
+             
+            
 
             </div>
 

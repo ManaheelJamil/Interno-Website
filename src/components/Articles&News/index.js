@@ -12,6 +12,7 @@ import { BiLogoLinkedin } from "react-icons/bi"
 import { FaInstagram } from "react-icons/fa"
 import { AiOutlineCopyrightCircle } from "react-icons/ai"
 import { Link } from 'react-router-dom';
+import BlogData from "../../data/Blog.json";
 const Articles = () => {
   const [scrolled, setScrolled] = useState(false);
   const [Open, setOpen] = useState(false);
@@ -108,82 +109,23 @@ const Articles = () => {
         <h1 className='font text-4xl '>Articles & News</h1>
         <div id="blog">
           <div className='laptop:w-[900px] mx-auto grid laptop:grid-cols-3 gap-5 tablet:grid-cols-2 justify-around mt-10'>
-            <div className='w-64 p-3 border rounded-[40px] hover:bg-[#F4F0EC] cursor-pointer'>
-             <Link to="/BlogDetails"> <img src="kitchen.png" className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
-              <h1 className='text-xl text-[#292F36] mt-2  font  font-semibold'>Let’s Get Solution For Building Construction Work</h1>
-              <div className='flex  px-2 justify-between tablet:w-56 mt-10'>
-                <div>
-                  <p className='text-[#292F36] mt-2'>26 December,2022 </p>
+            {BlogData ? BlogData.map((item,index) => {
+              return (
+                <div className='w-64 p-3 border rounded-[40px] hover:bg-[#F4F0EC] cursor-pointer'>
+                  <Link to={"/BlogDetails/"+item.id}> <img src={item.image} className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
+                    <h1 className='text-xl text-[#292F36] mt-2  font  font-semibold'>{item.heading}</h1>
+                    <div className='flex  px-2 justify-between tablet:w-56 mt-10'>
+                      <div>
+                        <p className='text-[#292F36] mt-2'>26 December,2022 </p>
+                      </div>
+                      <div className='w-10 h-10 rounded-full flex justify-center bg-[#F4F0EC]'>
+                        <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-1' />
+                      </div>
+                    </div></Link>
                 </div>
-                <div className='w-10 h-10 rounded-full flex justify-center bg-[#F4F0EC]'>
-                  <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-1' />
-                </div>
-              </div></Link>
-            </div>
-            <div className='w-64 p-3 border rounded-[40px] hover:bg-[#F4F0EC] cursor-pointer'>
-            <Link to="/BlogDetails">       <img src="left kitchen.png" className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
-              <h1 className='text-xl text-[#292F36] mt-2 font  font-semibold'>Low Cost Latest Invented Interior Designing
-                Ideas.</h1>
-              <div className='flex  px-2 justify-between tablet:w-56 mt-16'>
-                <div>
-                  <p className='text-[#292F36] mt-2'>22 December,2022 </p>
-                </div>
-                <div className='w-10 h-10 rounded-full flex justify-center bg-[#F4F0EC]'>
-                  <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-1' />
-                </div>
-              </div></Link>
-            </div>
-            <div className='w-64 p-3 border rounded-[40px] hover:bg-[#F4F0EC] cursor-pointer'>
-            <Link to="/BlogDetails">    <img src="frontKitchen.png" className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
-              <h1 className='text-xl text-[#292F36] mt-2  font font-semibold'>Best For Any Office & Business Interior
-                Solution</h1>
-              <div className='flex  px-2 justify-between tablet:w-54 mt-16'>
-                <div>
-                  <p className='text-[#292F36] mt-2'>22 December,2022 </p>
-                </div>
-                <div className='w-10 h-10 rounded-full flex justify-center bg-[#F4F0EC]'>
-                  <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-1' />
-                </div>
-              </div></Link>
-            </div>
-            <div className='w-64 p-3 border rounded-[40px] hover:bg-[#F4F0EC] cursor-pointer'>
-            <Link to="/BlogDetails">  <img src="Image (9).png" className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
-              <h1 className='text-xl text-[#292F36] mt-2  font  font-semibold'>Let’s Get Solution For Building Construction Work</h1>
-              <div className='flex  px-2 justify-between tablet:w-56 mt-10'>
-                <div>
-                  <p className='text-[#292F36] mt-2'>26 December,2022 </p>
-                </div>
-                <div className='w-10 h-10 rounded-full flex justify-center bg-[#F4F0EC]'>
-                  <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-1' />
-                </div>
-              </div></Link>
-            </div>
-            <div className='w-64 p-3 border rounded-[40px] hover:bg-[#F4F0EC] cursor-pointer'>
-            <Link to="/BlogDetails">   <img src="Image (10).png" className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
-              <h1 className='text-xl text-[#292F36] mt-2 font  font-semibold'>Low Cost Latest Invented Interior Designing
-                Ideas.</h1>
-              <div className='flex  px-2 justify-between tablet:w-56 mt-16'>
-                <div>
-                  <p className='text-[#292F36] mt-2'>22 December,2022 </p>
-                </div>
-                <div className='w-10 h-10 rounded-full flex justify-center bg-[#F4F0EC]'>
-                  <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-1' />
-                </div>
-              </div></Link>
-            </div>
-            <div className='w-64 p-3 border rounded-[40px] hover:bg-[#F4F0EC] cursor-pointer'>
-            <Link to="/BlogDetails">   <img src="Image (11).png" className=' duration-700 hover:scale-105 cursor-pointer rounded-t-[40px]' />
-              <h1 className='text-xl text-[#292F36] mt-2  font font-semibold'>Best For Any Office & Business Interior
-                Solution</h1>
-              <div className='flex  px-2 justify-between tablet:w-56 mt-16'>
-                <div>
-                  <p className='text-[#292F36] mt-2'>22 December,2022 </p>
-                </div>
-                <div className='w-10 h-10 rounded-full flex justify-center bg-[#F4F0EC]'>
-                  <MdKeyboardArrowRight className='text-3xl text-[#292F36] mt-1' />
-                </div>
-              </div></Link>
-            </div>
+              )
+            }) : "loading..."
+            }
           </div>
         </div>
       </div>
@@ -206,7 +148,7 @@ const Articles = () => {
         </div>
 
         <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-        <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
+          <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
           <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>

@@ -12,8 +12,8 @@ import { BiLogoLinkedin } from "react-icons/bi"
 import { FaInstagram } from "react-icons/fa"
 import { AiOutlineCopyrightCircle } from "react-icons/ai"
 import { Link } from 'react-router-dom';
-import {FaLinkedinIn} from "react-icons/fa"
-
+import { FaLinkedinIn } from "react-icons/fa"
+import teamData from "../../data/team.json"
 const Team = () => {
     const [scrolled, setScrolled] = useState(false);
     const [Open, setOpen] = useState(false);
@@ -85,102 +85,26 @@ const Team = () => {
             {/* ********************* sectiion 1 ******************0 */}
 
             <div className='tablet:w-[900px]  tablet:mx-auto mobile:mx-16 mt-40 grid laptop:grid-cols-4 gap-10 tablet:grid-cols-3 '>
-                <div className='text-center tablet:w-48  '>
-                <Link to="/TeamDetail1">   <img src="Image (7).png" className='tablet:w-48 tablet:h-72' />
-                   <div className='mobile:w-72 tablet:w-48'>
-                   <h1 className='text-2xl font mt-2 text-[#292F36]'>Charlotte Levi</h1>
-                    <p className='text-sm'>Design , Australia</p>
-                    <div className='flex  text-[#292F36]  text-sm my-3  justify-center mt-2 gap-10'>
-                        <FaFacebookF />
-                        <BsTwitter />
-                    </div>
-                    </div> 
-                    </Link>
-                </div>
-                <div className='text-center tablet:w-48'>
-                <Link to="/TeamDetail2">   <img src="image 2.png" className='tablet:w-48 tablet:h-72 mobile:w-72 mobile:h-96' />
-                <div className='mobile:w-72 tablet:w-48 '>   <h1 className='text-xl font mt-2 text-[#292F36]'>Nattasha Julie</h1>
-                    <p className='text-sm'>Design , Australia</p>
-                    <div className='flex   text-[#292F36]  text-sm my-3 justify-center mt-2 gap-5'>
-                        <FaFacebookF />
-                        <BsTwitter />
-                        <FaLinkedinIn/>
-                    </div>
-                    </div>
-                    </Link>
-                </div>
-
-                <div className='text-center tablet:w-48'>
-                  <Link to="/TeamDetail3"> <img src="third.png" className='tablet:w-48 tablet:h-72 mobile:w-72 mobile:h-96 rounded-3xl' />
-                  <div className='mobile:w-72 tablet:w-48 '>  <h1 className='text-xl font mt-2 text-[#292F36]'>John Smith</h1>
-                    <p className='text-sm'>Design , Australia</p>
-                    <div className='flex  text-[#292F36]  text-sm my-3  justify-center mt-2 gap-10'>
-                        <FaFacebookF />
-                        <BsTwitter />
-                    </div>
-                    </div>
-                    </Link> 
-                </div>
-                <div className='text-center tablet:w-48'>
-                    <Link to="/TeamDetail4"> <img src="image 3.png" className='tablet:w-48 tablet:h-72 mobile:w-72 mobile:h-96' />
-                    <div className='mobile:w-72 tablet:w-48 '>   <h1 className='text-xl font mt-2 text-[#292F36]'>Nora Owen</h1>
-                    <p className='text-sm'>Design , Australia</p>
-                    <div className='flex  text-[#292F36]  text-sm my-3  justify-center mt-2 gap-10'>
-                        <FaFacebookF />
-                        <BsTwitter />
-                    </div>
-                    </div>
-                    </Link>
-                </div>
-                <div className='text-center tablet:w-48'>
-                    <Link to="/TeamDetail5"> <img src="fifth.jpg" className='tablet:w-48 tablet:h-72 mobile:w-72 mobile:h-96 rounded-3xl' />
-                    <div className='mobile:w-72 tablet:w-48 '>   <h1 className='text-xl font mt-2 text-[#292F36]'>Sofia Carter</h1>
-                    <p className='text-sm'>Design , Australia</p>
-                    <div className='flex   text-[#292F36]  text-sm my-3 justify-center mt-2 gap-10'>
-                        <FaFacebookF />
-                        <BsTwitter />
-                    </div>
-                    </div>
-                    </Link>
-                </div>
-                <div className='text-center tablet:w-48'>
-                    <Link to="/TeamDetail6"> <img src="sixth.jpg" className='tablet:w-48 tablet:h-72 mobile:w-72 mobile:h-96 rounded-3xl' />
-                    <div className='mobile:w-72 tablet:w-48 '>   <h1 className='text-xl font mt-2 text-[#292F36]'>Avery Jackson</h1>
-                    <p className='text-sm'>Design , Australia</p>
-                    <div className='flex  text-[#292F36]  text-sm my-3  text-[#292F36] justify-center mt-2 gap-5'>
-                        <FaFacebookF />
-                        <BsTwitter />
-                        <FaLinkedinIn/>
-                    </div>
-                    </div>
-                    </Link>
-                </div>
-
-                <div className='text-center tablet:w-48'>
-                    <Link to="/TeamDetail7"> <img src="seventh.jpg" className='tablet:w-48 tablet:h-72 mobile:w-72 mobile:h-96 rounded-3xl' />
-                    <div className='mobile:w-72 tablet:w-48 '>  <h1 className='text-xl font mt-2 text-[#292F36]'>Luna James</h1>
-                    <p className='text-sm'>Design , Australia</p>
-                    <div className='flex  text-[#292F36]  text-sm my-3  justify-center mt-2 gap-10'>
-                        <FaFacebookF />
-                        <BsTwitter />
-                    </div>
-                    </div>
-                    </Link>
-                </div>
-                <div className='text-center tablet:w-48'>
-                    <Link to="/TeamDetail8"> <img src="eight.jpg" className='tablet:w-48 tablet:h-72 mobile:w-72 mobile:h-96 rounded-3xl' />
-                    <div className='mobile:w-72 tablet:w-48 '>    <h1 className='text-xl font mt-2 text-[#292F36]'>Gianna Mateo</h1>
-                    <p className='text-sm'>Design , Australia</p>
-                    <div className='flex   text-[#292F36]  text-sm my-3 justify-center mt-2 gap-10'>
-                        <FaFacebookF />
-                        <BsTwitter />
-                    </div>
-                    </div>
-                    </Link>
-                </div>
+                {teamData ? teamData.map((item,index) => {
+                    return (
+                        <div className='text-center tablet:w-48  '>
+                            <Link to={"/TeamDetail/"+item.id}>   <img src={item.image} className='tablet:w-48 tablet:h-72 rounded-3xl' />
+                                <div className='mobile:w-72 tablet:w-48'>
+                                    <h1 className='text-2xl font mt-2 text-[#292F36]'>{item.heading}</h1>
+                                    <p className='text-sm'>Design , Australia</p>
+                                    <div className='flex  text-[#292F36]  text-sm my-3  justify-center mt-2 gap-10'>
+                                        <FaFacebookF />
+                                        <BsTwitter />
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    )
+                }) : "loading...."
+                }
             </div>
 
-{/* *************** footer ***************** */}
+            {/* *************** footer ***************** */}
 
             <div id="contact" className='tablet:w-[900px] mt-40 text-[#292F36] mobile:mx-10 tablet:mx-auto mobile:space-y-10 tablet:space-y-0 grid laptop:grid-cols-5  tablet:grid-cols-3 '>
                 <div className='laptop:col-span-2 tablet:w-80 '>
@@ -198,12 +122,12 @@ const Team = () => {
                 </div>
 
                 <div className='list-none space-y-7 tablet:ml-20 laptop:ml-0 '>
-                <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
-          <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer font'><h1 className=' text-2xl'>Pages</h1></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/about'>About Us</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/project'> Our Project</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/team'>Our Team</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/ContactUs'>ContactUs</Link></li>
+                    <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><Link to='/services'>Services</Link></li>
                 </div>
                 <div className='list-none space-y-7 '>
                     <li className='hover:text-yellow-900 cursor-pointer hover:font-semibold'><h1 className='font-bold text-2xl'>Services</h1></li>
