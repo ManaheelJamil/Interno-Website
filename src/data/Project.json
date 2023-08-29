@@ -2,7 +2,7 @@
     {
         "id": 1,
         "category": "Bedroom",
-        "image": "one.png",
+        "image": "one.jpeg",
         "title": "Minimal Bedroom",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
@@ -17,8 +17,8 @@
     },
     {
         "id": 2,
-        "category": "Bedroom",
-        "image": "two.png",
+        "category": "Kitchen",
+        "image": "two.jpeg",
         "title": "Minimal Bedroom",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
@@ -34,7 +34,7 @@
     {
         "id": 3,
         "category": "Bedroom",
-        "image": "three.png",
+        "image": "three.jpeg",
         "title": "Minimal Bedroom",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
@@ -49,8 +49,8 @@
     },
     {
         "id": 4,
-        "category": "Bedroom",
-        "image": "four.png",
+        "category": "Bathroom",
+        "image": "four.jpeg",
         "title": "Minimal Bedroom",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
@@ -65,8 +65,8 @@
     },
     {
         "id": 5,
-        "category": "Bedroom",
-        "image": "five.png",
+        "category": "Bathroom",
+        "image": "five.jpeg",
         "title": "Minimal Bedroom",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
@@ -82,8 +82,8 @@
     },
     {
         "id": 6,
-        "category": "Bedroom",
-        "image": "six.png",
+        "category": "Livingarea",
+        "image": "six.jpeg",
         "title": "Minimal Bedroom",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
@@ -98,8 +98,8 @@
         ]
     }, {
         "id": 7,
-        "category": "Bedroom",
-        "image": "seven.png",
+        "category": "Kitchen",
+        "image": "seven.jpeg",
         "title": "Minimal Bedroom",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
@@ -115,8 +115,8 @@
     },
     {
         "id": 8,
-        "category": "Bedroom",
-        "image": "eight.png",
+        "category": "Livingarea",
+        "image": "eight8.jpeg",
         "title": "Minimal Bedroom",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [

@@ -10,7 +10,7 @@
         scroll-behavior: smooth;
     }
     .bg{
-        background-image: url("../public/Images.png");
+        background-image: url("../public/front.jpeg");
         background-repeat: no-repeat;
        background-size: cover;
        background-position: center;
@@ -21,4 +21,7 @@
     .img{
         border-Radius:0px 50% 0px 80px;
     }
+}
+@supports (loading: lazy) {
+    .bg{  background-image: url("../public/front.jpeg");}
 }
