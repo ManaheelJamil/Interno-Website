@@ -18,8 +18,8 @@
     {
         "id": 2,
         "category": "Kitchen",
-        "image": "two.jpeg",
-        "title": "Minimal Bedroom",
+        "image": "https://www.mandicasa.com/wp-content/uploads/2023/01/Omicron-kitchen-29.jpg",
+        "title": "Luxury Kitchen",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
@@ -50,8 +50,8 @@
     {
         "id": 4,
         "category": "Bathroom",
-        "image": "four.jpeg",
-        "title": "Minimal Bedroom",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/allisonknizekdesign-erikabiermanphoto-5-1674499280.jpg",
+        "title": "White Stylish Bathroom",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
@@ -66,12 +66,11 @@
     {
         "id": 5,
         "category": "Bathroom",
-        "image": "five.jpeg",
-        "title": "Minimal Bedroom",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/toledo-geller-tenafly-210924-024-copy-1668037377-644ab01ecb59f.jpg",
+        "title": "Bathroom Stylish Design",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
-                
                 "client": "Your Client Name",
                 "category": "Interiors",
                 "Tag": "Interiors , Home",
@@ -83,12 +82,11 @@
     {
         "id": 6,
         "category": "Livingarea",
-        "image": "six.jpeg",
-        "title": "Minimal Bedroom",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/living-room-colors-white-paint-1663949992-6481fc5ad0bc5.jpeg",
+        "title": "Stylish Luxury Living Area",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
-               
                 "client": "Your Client Name",
                 "category": "Interiors",
                 "Tag": "Interiors , Home",
@@ -96,15 +94,15 @@
                 "Link": "Link example.com"
             }
         ]
-    }, {
+    },
+    {
         "id": 7,
         "category": "Kitchen",
-        "image": "seven.jpeg",
-        "title": "Minimal Bedroom",
+        "image": "https://images.squarespace-cdn.com/content/v1/56504323e4b05a6dcaa4cca8/1619782761913-YRAUIAEO0QD3M1GDQ5CI/Wood+n+Co+-+Luxury+Hamptons+Style+Kitchen.jpg",
+        "title": "Full Stylish Luxury Kitchen with Table",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
-              
                 "client": "Your Client Name",
                 "category": "Interiors",
                 "Tag": "Interiors , Home",
@@ -116,12 +114,137 @@
     {
         "id": 8,
         "category": "Livingarea",
-        "image": "eight8.jpeg",
-        "title": "Minimal Bedroom",
+        "image": "https://media.designcafe.com/wp-content/uploads/2022/07/29185240/industrial-rustic-living-room-in-earthy-tones.jpg",
+        "title": "  Living Room Interior Design",
         "subTitle": "Decore/Architecture",
         "furtherDetails": [
             {
-               
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
+            }
+        ]
+    },
+    {
+        "id": 9,
+        "category": "Kitchen",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7gl2Jy4rFa9QPOzvxZne2wn25kB9MUrmn0A&usqp=CAU",
+        "title": " Stylish Luxury Kitchen ",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "category": "Kitchen",
+        "image": "https://beyondidonline.com/wp-content/uploads/2020/07/Prospect-60-scaled-2.jpg",
+        "title": "  Luxury Kitchen ",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
+            }
+        ]
+    },
+    {
+        "id": 11,
+        "category": "Livingarea",
+        "image": "https://media.designcafe.com/wp-content/uploads/2019/12/17055333/living-room-interior-design-checklist-intro.jpg",
+        "title": " Luxury Living Area",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
+            }
+        ]
+    },
+    {
+        "id": 12,
+        "category": "Livingarea",
+        "image": "https://st.hzcdn.com/simgs/pictures/living-rooms/kingsley-additions-sketch-building-design-img~ba91067c0fa38cf4_14-0133-1-ce808bf.jpg",
+        "title": " Stylish Living Area",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
+            }
+        ]
+    },
+    {
+        "id": 13,
+        "category": "Bathroom",
+        "image": "https://renify.s3.amazonaws.com/system/uploads/images/3068/Small_bathroom_ideas_-_thehousethatjenbuilt.webp",
+        "title": "Luxury Stylish Bathroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
+            }
+        ]
+    }, {
+        "id": 14,
+        "category": "Bathroom",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsryiqAn8c6PoCMUdf4nJk7B4vfIjSbkZs-A&usqp=CAU",
+        "title": "Luxury  Bathroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "category": "Bedroom",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCyOIIqTELWXYWiR-ZISUrN00bbhHwVEWpw&usqp=CAU",
+        "title": "Luxury Stylish Bedroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
+                "client": "Your Client Name",
+                "category": "Interiors",
+                "Tag": "Interiors , Home",
+                "Date": "Date 23,02, 2022",
+                "Link": "Link example.com"
+            }
+        ]
+    }, {
+        "id": 16,
+        "category": "Bedroom",
+        "image": "https://i0.wp.com/greenweddingshoes.com/wp-content/uploads/2023/01/rustic-black-canopy-bed-aesthetic-bedroom-ideas.jpeg?fit=1024%2C9999",
+        "title": "Luxury Stylish Bedroom",
+        "subTitle": "Decore/Architecture",
+        "furtherDetails": [
+            {
                 "client": "Your Client Name",
                 "category": "Interiors",
                 "Tag": "Interiors , Home",
