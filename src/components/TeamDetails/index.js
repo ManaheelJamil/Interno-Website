@@ -60,7 +60,7 @@ const TeamDetail = (props) => {
                 <img
                     src="lazy.jpeg"
                     data-src="/teamBanner.jpeg"
-                    alt=""
+                    alt="Team Image"
                     className={`loaded ? "loaded" : "loading" w-full `}
                     onLoad={() => setIsLoaded(true)}
                     loading='lazy'
